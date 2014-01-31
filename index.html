@@ -1,14 +1,13 @@
 ---
 layout: layout
-title: Una Kravets Online
+title: Una Kravets' Portfolio
 ---
 
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="description of your document">
-	<title> {% if page.title %} {{ page.title }} | {% endif %} Una Kravets Online </title>
+	<meta name="description" content="{{ site.description }}">
+	<title> {% if page.title %} {{ page.title }} | {% endif %} {{ site.title }}</title>
 	<link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
@@ -37,9 +36,9 @@ title: Una Kravets Online
 
 		<ul class="entries">
 			{% for post in site.posts %}
-		 
 			<li>
 				<a href="{{ post.url }}">
+					<img src="{{ post.image-index }}" alt="{{ post.title }}"></img>
 					<h3>{{ post.title }}</h3>
 				</a>
 			</li>
