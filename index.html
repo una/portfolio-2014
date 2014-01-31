@@ -1,0 +1,57 @@
+---
+layout: layout
+title: Una Kravets Online
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="description of your document">
+	<title> {% if page.title %} {{ page.title }} | {% endif %} Una Kravets Online </title>
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header role="banner">
+	<h1>Title of your document</h1>
+	<nav>
+		<ul role="navigation">
+			<li>
+				<a href="#">alpha</a>
+			</li>
+			<li>
+				<a href="#">bravo</a>
+			</li>
+			<li>
+				<a href="#">charlie</a>
+			</li>
+			<li>
+				<a href="#">delta</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<main role="main">
+		{{ content }}
+
+		<ul class="entries">
+			{% for post in site.posts %}
+		 
+			<li>
+				<a href="{{ post.url }}">
+					<h3>{{ post.title }}</h3>
+				</a>
+			</li>
+		 
+			{% endfor %}
+		</ul>
+</main>
+ 
+		<footer role="contentinfo">
+			<p>&copy; Una Kravets 2014 | All Rights Reserved. </p>
+		</footer>
+ 
+	</div>
+</body>
+</html>
