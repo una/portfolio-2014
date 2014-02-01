@@ -3,14 +3,9 @@ layout: layout
 title: Una Kravets' Portfolio
 ---
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta name="description" content="{{ site.description }}">
-	<title> {% if page.title %} {{ page.title }} | {% endif %} {{ site.title }}</title>
-	<link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
+<header role="banner">
+<h1>Una Kravets Makes Things</h1>
+</header>
 
 <main role="main">
 		{{ content }}
@@ -27,11 +22,3 @@ title: Una Kravets' Portfolio
 			{% endfor %}
 		</ul>
 </main>
- 
-		<footer role="contentinfo">
-			<p>&copy; Una Kravets 2014 | All Rights Reserved. </p>
-		</footer>
- 
-	</div>
-</body>
-</html>
