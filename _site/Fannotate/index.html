@@ -8,6 +8,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900|Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../stylesheets/style.css">
 
+	<!-- including jquery link in head bc slider size unique to each page -->
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
 </head>
 <body>
 
@@ -54,7 +57,16 @@
 
 
 		<section class="contain-1100">
-			<div class="row">
+			<script>
+  $(function(){
+	$(".slider").slidesjs({
+	  width: 940,
+	  height: 528
+	});
+  });
+</script>
+
+<div class="row">
 	<h2>We Turned to People</h2>
 	<p>We went out in the wild -- we watched human behavior, took notes, and drew conclusions. We surveryed over 100 people ages 18-52 to learn about their music and entertainment prefernces, and a few conclusions were drawn:</p>
 	<div class="statistic">
@@ -83,8 +95,12 @@
 
 ------------- --------
 </p>
-<div class="slider">
-	fuck, i need to figure out a slider.
+<div class="slider"> 
+	<img src="http://placehold.it/940x528">
+	<img src="http://placehold.it/940x528">
+	<img src="http://placehold.it/940x528">
+	<img src="http://placehold.it/940x528">
+	<img src="http://placehold.it/940x528">
 </div>
 
 
@@ -112,6 +128,7 @@
 </footer>
 
 </body>
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	
+	<script src="../js/jquery.slides.min.js"></script>
 	<script src="../js/scripts.js"></script>
 </html>
