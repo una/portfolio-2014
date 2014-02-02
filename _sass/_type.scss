@@ -39,7 +39,7 @@
 		color: $color--gold;
 		&:hover {
 			color: white;
-			background-color: $color--orange;
+			background-color: $color--gold;
 		}
 	}
 	
@@ -57,7 +57,7 @@
 		color: $color--blue;
 		&:hover {
 			color: white;
-			background-color: $color--orange;
+			background-color: $color--blue;
 		}
 	}
 	
@@ -94,11 +94,13 @@ h1 {
 }
 
 a {
+	@include transition-duration(0.5s);
 	text-decoration: none;
+	padding: 0 0.2em;
 }
 
 h2 {
-	@include fontsize(48);
+	@include fontsize(42);
 }
 
 p {
