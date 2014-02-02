@@ -113,9 +113,13 @@ blockquote {
 	@include fontsize(24);
 	max-width: 800px;
 	margin: 1.5em 0;
-	color: $color--copy;
-	overflow: hidden;
-
+	color: $color--copy--dark;
+	
+	&:not(.center) {
+		position: relative;
+		z-index: 2;
+		margin-bottom: -1.5em;
+	}
 }
 
 %center-contain,

@@ -16,15 +16,15 @@ body {
 %left,
 .left {
 	float: left;
-	-ms-text-align-last: left;
-	text-align-last: left;
+	-ms-text-align: left;
+	text-align: left;
 	padding-right: 2em;
 }
 %right,
 .right {
 	float: right;
-	-ms-text-align-last: right;
-	text-align-last: right;
+	-ms-text-align: right;
+	text-align: right;
 	padding-left: 2em;
 }
 

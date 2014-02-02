@@ -8,3 +8,4 @@ $color--offwhite: lemonchiffon; // #fffacd rgb(255,250,205)
 
 $color--bg: white;
 $color--copy: $color--grey;
+$color--copy--dark: darken($color--grey, 15);
