@@ -9,10 +9,16 @@
 		{% endfor %}
 	</h3>
 	<div class="cs__intro-bg">
-		<img src="{{ page.image-bg }}" alt="{{ page.title }}">
+		<img src="{{ page.image-bg }}" alt="{{ page.title }} background">
 		<div class="shader"></div>
 	</div>
 </header>
 
 <main role="main" class="cs-main {{ page.color }}">
+	<div class="center-contain">
+		<div class="cs--top-image">
+			<img src="{{ page.image-top }}" alt="{{ page.title }}">
+		</div>
+		<h1 class="cs--inverted">{{ page.summary }}</h1>
+	</div>
 

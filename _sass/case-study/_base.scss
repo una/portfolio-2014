@@ -5,15 +5,13 @@
 }
 
 .cs__intro-section {
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
 	height: 600px;
 	width: 100%;
+	
+	h1 {
+		margin: 1em 0 0;
+	}
 }
-
 
 .cs__intro-bg {
 	position: fixed; 
@@ -40,3 +38,14 @@
 	background-color: rgba(0,0,0,0.8);
 }
 
+.cs-main {
+	width: 100%;
+	background: white;
+	display: block;
+}
+
+.cs--top-image {
+	img {
+		margin-top: -300px;
+	}
+}

@@ -1,6 +1,10 @@
 .menu-section {
 	z-index: 10;
 	position: relative;
+	position: absolute;
+	width: 100%;
+	top: 0;
+
 	@include transition-duration(0.3s);
 	
 	&.on {

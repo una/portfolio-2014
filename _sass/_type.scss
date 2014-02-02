@@ -16,16 +16,31 @@
 %orange,
 .orange {
 	color: $color--orange;
+	
+	.cs--inverted {
+		background-color: $color--orange;
+		@extend %white;
+	}
 }
 
 %gold,
 .gold {
 	color: $color--gold;
+	
+	.cs--inverted {
+		background-color: $color--gold;
+		@extend %white;
+	}
 }
 
 %blue,
 .blue {
 	color: $color--blue;
+	
+	.cs--inverted {
+		background-color: $color--blue;
+		@extend %white;
+	}
 }
 
 body {
@@ -40,7 +55,26 @@ h3 {
 }
 
 h1 {
-	@include fontsize(60);
+	@include fontsize(48);
+}
+
+%center-contain,
+.center-contain {
+	text-align: center;
+}
+
+.cs--inverted {
+	margin: 1em auto 1.5em;
+	display: inline-block;
+	padding: 0.2em 0.5em;
+}
+
+h2 {
+	@include fontsize(48);
+}
+
+p {
+	color: $color--copy;
 }
 
 h3 {
