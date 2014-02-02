@@ -16,6 +16,14 @@
 %orange,
 .orange {
 	color: $color--orange;
+
+	a {
+		color: $color--orange;
+		&:hover {
+			color: white;
+			background-color: $color--orange;
+		}
+	}
 	
 	.cs--inverted {
 		background-color: $color--orange;
@@ -26,6 +34,14 @@
 %gold,
 .gold {
 	color: $color--gold;
+
+	a {
+		color: $color--gold;
+		&:hover {
+			color: white;
+			background-color: $color--orange;
+		}
+	}
 	
 	.cs--inverted {
 		background-color: $color--gold;
@@ -36,6 +52,14 @@
 %blue,
 .blue {
 	color: $color--blue;
+
+	a {
+		color: $color--blue;
+		&:hover {
+			color: white;
+			background-color: $color--orange;
+		}
+	}
 	
 	.cs--inverted {
 		background-color: $color--blue;
@@ -67,6 +91,10 @@ h1 {
 	margin: 1em auto 1.5em;
 	display: inline-block;
 	padding: 0.2em 0.5em;
+}
+
+a {
+	text-decoration: none;
 }
 
 h2 {

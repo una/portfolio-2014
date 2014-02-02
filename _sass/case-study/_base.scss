@@ -42,6 +42,21 @@
 	width: 100%;
 	background: white;
 	display: block;
+	
+	h2 {
+		max-width: 800px;
+		margin-bottom: 0.5em;
+	}
+
+	p {
+		max-width: 600px;
+		@include fontsize(12);
+		line-height: 1.4;
+	}
+
+	a {
+		@extend %font-title;
+	}
 }
 
 .cs--top-image {
