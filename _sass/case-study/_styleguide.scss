@@ -5,35 +5,35 @@ $contrasted-lightness-threshold: 50%;
 //COLOR BOXES IN STYLEGUIDE
 .color-box {
 	display: inline-block;
-	margin: 5px;
-	padding: 20px;
+	margin: 1%;
+	padding: 4%;
 	text-align: center;
 	vertical-align: top;
-	width: 250px;
+	width: 46%;
 	&:before, &:after {
 	   display: block;
+	   margin: 0.5em;
 	}
 }
 
-// THIS IS WHERE THE MAGIX HAPPENS
-// Only with lists :p
 $colors: (
-	tomato #ff6348,
-	cornflower #6495ed,
-	gold #ffd800,
-	dimgray #696969
+	tomato rgb(255,99,71) 'rgb(255,99,71)',
+	'cornflowerblue' rgb(100,149,237) 'rgb(100,149,237)',
+	gold rgb(255,215,0) 'rgb(255,215,0)',
+	dimgrey rgb(105,105,105) 'rgb(105,105,105)'
 );
 
 @each $color in $colors {
-    $color_name: nth($color, 1);
-    $hex: nth($color, 2);
-    .color-box.#{$color_name} {
-        @include contrasted($hex);
-        &:before {
-            content: '$#{$color_name}';
-        }
-        &:after {
-            content: '#{$hex}';
-        }
-    }
+	$var-namr: nth($color, 1);
+	$hex: nth($color, 2);
+	$css-name: nth($color, 3);
+	.color-box.#{$var-namr} {
+		@include contrasted($hex);
+		&:before {
+			content: '#{$var-namr}';
+		}
+		&:after {
+			content: '#{$css-name}';
+		}
+	}
 }

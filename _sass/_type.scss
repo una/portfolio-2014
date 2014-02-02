@@ -127,7 +127,7 @@ blockquote {
 	margin: 1.5em 0;
 	color: $color--copy--dark;
 	
-	&:not(.center) {
+	&:not(.push) {
 		position: relative;
 		z-index: 2;
 		margin-bottom: -1.5em;
