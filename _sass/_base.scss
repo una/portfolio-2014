@@ -21,3 +21,13 @@ body {
 .right {
 	float: right;
 }
+
+::selection {
+	color: white;
+	background: $color--orange;
+}
+
+::-moz-selection {
+	color: white;
+	background: $color--orange;
+}

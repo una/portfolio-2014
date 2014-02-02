@@ -8,6 +8,11 @@
 	font-weight: 900; 
 }
 
+%font-blockquote {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: 400; 
+}
+
 %white,
 .white {
 	color: white;
@@ -29,6 +34,10 @@
 		background-color: $color--orange;
 		@extend %white;
 	}
+
+	blockquote span {
+		color: $color--orange;
+	}
 }
 
 %gold,
@@ -46,6 +55,10 @@
 	.cs--inverted {
 		background-color: $color--gold;
 		@extend %white;
+	}
+
+	blockquote span {
+		color: $color--gold;
 	}
 }
 
@@ -65,6 +78,10 @@
 		background-color: $color--blue;
 		@extend %white;
 	}
+
+	blockquote span {
+		color: $color--blue;
+	}
 }
 
 body {
@@ -80,6 +97,15 @@ h3 {
 
 h1 {
 	@include fontsize(48);
+}
+
+blockquote {
+	@extend %font-blockquote;
+	@include fontsize(24);
+	max-width: 800px;
+	margin: 1.5em 0;
+	color: $color--copy;
+
 }
 
 %center-contain,
