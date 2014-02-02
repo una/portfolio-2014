@@ -16,16 +16,17 @@ body {
 %left,
 .left {
 	float: left;
-	-ms-text-align: left;
-	text-align: left;
 	padding-right: 2em;
 }
 %right,
 .right {
 	float: right;
+	padding-left: 2em;
+}
+
+blockquote.right {
 	-ms-text-align: right;
 	text-align: right;
-	padding-left: 2em;
 }
 
 %center,

@@ -1,0 +1,39 @@
+//COMPASS SETUP
+$contrasted-lightness-threshold: 50%;
+@import "compass/utilities/color/contrast";
+
+//COLOR BOXES IN STYLEGUIDE
+.color-box {
+	display: inline-block;
+	margin: 5px;
+	padding: 20px;
+	text-align: center;
+	vertical-align: top;
+	width: 250px;
+	&:before, &:after {
+	   display: block;
+	}
+}
+
+// THIS IS WHERE THE MAGIX HAPPENS
+// Only with lists :p
+$colors: (
+	tomato #ff6348,
+	cornflower #6495ed,
+	gold #ffd800,
+	dimgray #696969
+);
+
+@each $color in $colors {
+    $color_name: nth($color, 1);
+    $hex: nth($color, 2);
+    .color-box.#{$color_name} {
+        @include contrasted($hex);
+        &:before {
+            content: '$#{$color_name}';
+        }
+        &:after {
+            content: '#{$hex}';
+        }
+    }
+}
