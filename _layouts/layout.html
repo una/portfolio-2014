@@ -1,7 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="description" content="{{ site.description }}">
+	<meta charset="UTF-8">
+	<title> {% if page.title %} {{ page.title }} | {% endif %} {{ site.title }}</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900|Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="stylesheets/style.css">
+
+</head>
+<body>
+
 {% include nav.html %}
     <section>
       {{ content }}
     </section>
-  </body>
+<footer role="contentinfo">
+	<p>&copy; Una Kravets 2014 | All Rights Reserved. </p>
+</footer>
+</body>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="../js/scripts.js"></script>
 </html>
-{% include footer.html %}

@@ -1,7 +1,7 @@
 name: "Una Kravets' Portfolio"
 description: "The online portflio of Una Kravets, front end developer and graphic designer based in Washington, DC."
 
-url: "[YOUR DOMAIN]"
+url: "unakravets.com"
 
 markdown: rdiscount
 rdiscount extensions: [smart]

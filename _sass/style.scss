@@ -1,7 +1,11 @@
 @import "compass/reset";
 @import "compass/css3";
 
-@import "nav";
+@import "vars";
+@import "mixins";
 @import "base";
+@import "type";
+@import "nav";
+@import "home";
 
-// @import "case-study/*";
+@import "case-study/base";

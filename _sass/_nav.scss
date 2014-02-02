@@ -1,4 +1,19 @@
-.menu-toggle {
+.menu-section {
+	z-index: 10;
+	position: relative;
+	@include transition-duration(0.3s);
+	
+	&.on {
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-color: rgba(255,99,71,0.9);
+	position: absolute;
+	}
+}
+
+.menu-section__toggle {
 	width: 40px;
 	height: 30px;
 	position: absolute;
@@ -7,23 +22,23 @@
 	cursor: pointer;
 	
 	&.on {
-		.one {
+		.toggle--1 {
 			@include transform(rotate(45deg) translate(7px, 7px));
 		}
 
-		.two {
+		.toggle--2 {
 			opacity: 0;
 		}
 
-		.three {
+		.toggle--3 {
 			@include transform (rotate(-45deg) translate(8px, -10px));
 		}
 	}
 }
 
-.one,
-.two,
-.three{
+.toggle--1,
+.toggle--2,
+.toggle--3{
 	width: 100%;
 	height: 5px;
 	background: white;
@@ -53,18 +68,8 @@ nav ul{
 		width: 100%;
 		display: block;
 			&:hover {
-				background-color: rgba(0,0,0,0.5);
+				background-color: rgba(255,255,255,0.8);
+				color: $color--orange;
 			}
 		}
-}
-
-.menu-section {
-	&.on {
-	z-index: 10;
-	width: 100%;
-	height: 100%;
-	display: block;
-	background-color: rgba(0,0,0,0.5);
-	position: absolute;
-	}
 }

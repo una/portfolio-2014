@@ -1,0 +1,39 @@
+.marked {
+	outline: 1px solid tomato;
+}
+
+.cs__intro-section {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: 600px;
+	width: 100%;
+}
+
+
+.cs__intro-bg {
+	position: fixed; 
+	top: -50%; 
+	left: -50%; 
+	width: 200%; 
+	height: 200%;
+	z-index: -1;
+	
+	img, 
+	.shader {
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		right: 0; 
+		bottom: 0; 
+		margin: auto; 
+		min-width: 50%;
+		min-height: 50%;
+	}
+}
+
+.shader {
+	background-color: rgba(255,99,71,0.8);
+}

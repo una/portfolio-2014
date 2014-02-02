@@ -1,0 +1,18 @@
+%font-copy {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300; 
+}
+
+%font-title {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: 900; 
+}
+
+body {
+	@extend %font-copy;
+}
+
+h1,
+h2 {
+	@extend %font-title;
+}
