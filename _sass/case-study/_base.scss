@@ -38,32 +38,49 @@
 	background-color: rgba(0,0,0,0.8);
 }
 
+
+
 .cs-main {
 	width: 100%;
 	background: white;
 	display: block;
+	padding-bottom: 1em; //kinda hacky
 	
 	img:not(.cs--top-image) {
 		max-width: 1100px;
 		margin-top: 1em;
 		margin-bottom: 3em;
 		display: block;
-		
-		&.center {
-			margin-left: auto;
-			margin-right: auto;
+
+
+		&.half-l {
+			max-width: 48%;
+			float: left;
+		}
+
+		&.half-r {
+			max-width: 48%;
+			float: right;
 		}
 	}
 	
 	h2 {
 		max-width: 800px;
 		margin-bottom: 0.5em;
+		
+		&.clear-max {
+			max-width: none;
+		}
 	}
 
 	p {
-		max-width: 600px;
+		max-width: 650px;
 		@include fontsize(12);
 		line-height: 1.4;
+		
+		&.clear-max {
+			max-width: none;
+		}
 	}
 
 	a {
@@ -73,4 +90,9 @@
 
 .cs--top-image {
 	margin-top: -300px;
+}
+
+%clear-max,
+.clear-max {
+	max-width: none;
 }

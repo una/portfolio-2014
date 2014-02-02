@@ -34,6 +34,9 @@
 		background-color: $color--orange;
 		@extend %white;
 	}
+	p span {
+		border-bottom: 1px solid $color--orange;
+	}
 
 	blockquote span {
 		color: $color--orange;
@@ -56,6 +59,9 @@
 		background-color: $color--gold;
 		@extend %white;
 	}
+	p span {
+		border-bottom: 1px solid $color--gold;
+	}
 
 	blockquote span {
 		color: $color--gold;
@@ -77,6 +83,9 @@
 	.cs--inverted {
 		background-color: $color--blue;
 		@extend %white;
+	}
+	p span {
+		border-bottom: 1px solid $color--blue;
 	}
 
 	blockquote span {
@@ -105,6 +114,7 @@ blockquote {
 	max-width: 800px;
 	margin: 1.5em 0;
 	color: $color--copy;
+	overflow: hidden;
 
 }
 

@@ -16,10 +16,23 @@ body {
 %left,
 .left {
 	float: left;
+	-ms-text-align-last: left;
+	text-align-last: left;
+	padding-right: 2em;
 }
 %right,
 .right {
 	float: right;
+	-ms-text-align-last: right;
+	text-align-last: right;
+	padding-left: 2em;
+}
+
+%center,
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
 ::selection {
@@ -30,4 +43,16 @@ body {
 ::-moz-selection {
 	color: white;
 	background: $color--orange;
+}
+
+.row {
+	overflow: hidden;
+	position: relative;
+	width: 100%
+}
+
+hr {
+	margin: 1em 0 3em;
+	top: 1px solid $color--copy;
+	bottom: 0px solid transparent;
 }
