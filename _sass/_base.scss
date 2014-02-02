@@ -8,3 +8,12 @@ body {
 	max-width: 1100px;
 	margin: 0 auto;
 }
+
+%left,
+.left {
+	float: left;
+}
+%right,
+.right {
+	float: right;
+}

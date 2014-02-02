@@ -8,6 +8,26 @@
 	font-weight: 900; 
 }
 
+%white,
+.white {
+	color: white;
+}
+
+%orange,
+.orange {
+	color: $color--orange;
+}
+
+%gold,
+.gold {
+	color: $color--gold;
+}
+
+%blue,
+.blue {
+	color: $color--blue;
+}
+
 body {
 	@extend %font-copy;
 	font-size: 16px;
@@ -26,8 +46,10 @@ h1 {
 h3 {
 	@include fontsize(16);
 	line-height: 2;
+	color: white;
 	.marked {
 		@extend %font-copy;
 		@include fontsize(12);
+		color: $color--copy;
 	}
 }
