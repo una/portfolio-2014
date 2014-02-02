@@ -1,6 +1,5 @@
 .menu-section {
 	z-index: 10;
-	position: relative;
 	position: absolute;
 	width: 100%;
 	top: 0;
@@ -13,7 +12,7 @@
 	height: 100%;
 	display: block;
 	background-color: rgba(255,99,71,0.9);
-	position: absolute;
+	position: fixed;
 	}
 }
 
