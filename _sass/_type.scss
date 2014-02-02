@@ -10,9 +10,24 @@
 
 body {
 	@extend %font-copy;
+	font-size: 16px;
 }
 
 h1,
-h2 {
+h2,
+h3 {
 	@extend %font-title;
+}
+
+h1 {
+	@include fontsize(60);
+}
+
+h3 {
+	@include fontsize(16);
+	line-height: 2;
+	.marked {
+		@extend %font-copy;
+		@include fontsize(12);
+	}
 }
