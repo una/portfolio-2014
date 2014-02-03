@@ -9,3 +9,13 @@ $color--offwhite: lemonchiffon; // #fffacd rgb(255,250,205)
 $color--bg: white;
 $color--copy: $color--grey;
 $color--copy--dark: darken($color--grey, 15);
+
+// BREAKPOINTS
+
+$phone-vert: max-width 20em; // 20em (320px)
+$phone-horiz: max-width 30em; // 30em (480px)
+$small-tab: max-width 37.5em; // 37.5em (600px)
+$tab-vert: max-width 28em; // 48em (768px)
+$tab-horiz: max-width 56.25em; // 56.25em (900px)
+$browser: max-width 68.75em;// 68.75em (1100px)
+$huge: min-width 81.25em;// 81.25em (1300px)

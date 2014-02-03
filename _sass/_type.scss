@@ -129,6 +129,16 @@ h3 {
 
 h1 {
 	@include fontsize(48);
+	
+	@include breakpoint($tab-horiz) {
+		@include fontsize(42);
+	}
+	@include breakpoint($small-tab) {
+		@include fontsize(36);
+	}
+	@include breakpoint($phone-horiz) {
+		@include fontsize(28);
+	}
 }
 
 blockquote {
@@ -174,10 +184,27 @@ h3 {
 	@include fontsize(16);
 	line-height: 2;
 	color: white;
+	z-index: 2;
+	position: relative;
+	
 	.marked {
 		@extend %font-copy;
 		@include fontsize(12);
 		color: $color--copy;
+		
+		@include breakpoint($tab-horiz) {
+			@include fontsize(8);
+		}
+		@include breakpoint($phone-horiz) {
+			@include fontsize(6);
+		}
+	}
+
+	@include breakpoint($tab-horiz) {
+		@include fontsize(12);
+	}
+	@include breakpoint($phone-horiz) {
+		@include fontsize(10);
 	}
 }
 
