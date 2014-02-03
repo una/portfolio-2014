@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Ampersand';
-    src: local('Elephant'), local('Baskerville'), local('Palatino'), local('Book Antiqua');
+    src: local('Baskerville'), local('Palatino'), local('Book Antiqua');
     unicode-range: U+26;
 }
 @font-face {
@@ -24,6 +24,17 @@
 	font-family: Ampersand, 'Alegreya Sans SC', sans-serif;
 	font-weight: 400; 
 }
+
+.uppercase,
+%uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase,
+%lowercase {
+	text-transform: lowercase;
+}
+
 
 %white,
 .white {
@@ -168,4 +179,10 @@ h3 {
 		@include fontsize(12);
 		color: $color--copy;
 	}
+}
+
+small {
+	font-size: 60%;
+	color: $color--copy;
+	@extend %font-copy; 
 }

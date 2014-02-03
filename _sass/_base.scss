@@ -24,6 +24,11 @@ body {
 	padding-left: 2em;
 }
 
+.clear,
+%clear {
+	clear: both;
+}
+
 blockquote.right {
 	-ms-text-align: right;
 	text-align: right;

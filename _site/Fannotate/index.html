@@ -49,14 +49,16 @@
 		
 	</h3>
 	<div class="cs__intro-bg">
-		<img src="http://www.srugulo.info/wp-content/uploads/2013/12/cute-unicorns-nvendyi3.jpg" alt="Fannotate background">
+		<img src="../images/fannotate/bg.jpg" alt="Fannotate background">
 		<div class="shader"></div>
 	</div>
 </header>
 
 <main role="main" class="cs-main fannotate orange">
 	<div class="center-contain">
-		<img class="cs--top-image" src="" alt="Fannotate">
+		<div class="cs--top-image--container">
+			<img class="cs--top-image" src="../images/fannotate/top-fannotate.png" alt="Fannotate">
+		</div>
 		<h1 class="cs--inverted">A Music Discovery App</h1>
 	</div>
 
@@ -65,10 +67,27 @@
 			<script>
   $(function(){
 	$(".slider").slidesjs({
-	  width: 940,
-	  height: 528
+		width: 1448,
+		height: 500,
+		pagination: {
+			effect: 'fade',
+			active: true
+		},
+		callback: {
+			loaded: function(){
+				$('.slidesjs-navigation').hide(0);
+			}
+		},
+		play: {
+			auto: true,
+			effect: 'fade',
+			speed: 500,
+			pauseOnHover: true,
+			restartDelay: 2500
+		}
 	});
-  });
+});
+
 </script>
 
 <div class="row">
@@ -101,11 +120,8 @@
 ------------- --------
 </p>
 <div class="slider"> 
-	<img src="http://placehold.it/940x528">
-	<img src="http://placehold.it/940x528">
-	<img src="http://placehold.it/940x528">
-	<img src="http://placehold.it/940x528">
-	<img src="http://placehold.it/940x528">
+	<img src="../images/fannotate/slide1.jpg">
+	<img src="../images/fannotate/slide2.jpg">
 </div>
 
 

@@ -7,17 +7,35 @@ summary: A Music Discovery App
 color: orange
 challenge: Create a mobile experience for a company which connects people in a new way.
 roles: [Research & Ideation, UX Design, Prototype Development]
-image-index: "http://www.srugulo.info/wp-content/uploads/2013/12/cute-unicorns-nvendyi3.jpg"
-image-bg: "http://www.srugulo.info/wp-content/uploads/2013/12/cute-unicorns-nvendyi3.jpg"
+image-index: "../images/fannotate/top-fannotate.png"
+image-bg: "../images/fannotate/bg.jpg"
+image-top: "../images/fannotate/top-fannotate.png"
 ---
 
 <script>
   $(function(){
 	$(".slider").slidesjs({
-	  width: 940,
-	  height: 528
+		width: 1448,
+		height: 500,
+		pagination: {
+			effect: 'fade',
+			active: true
+		},
+		callback: {
+			loaded: function(){
+				$('.slidesjs-navigation').hide(0);
+			}
+		},
+		play: {
+			auto: true,
+			effect: 'fade',
+			speed: 500,
+			pauseOnHover: true,
+			restartDelay: 2500
+		}
 	});
-  });
+});
+
 </script>
 
 <div class="row">
@@ -50,11 +68,8 @@ image-bg: "http://www.srugulo.info/wp-content/uploads/2013/12/cute-unicorns-nven
 ------------- --------
 </p>
 <div class="slider"> 
-	<img src="http://placehold.it/940x528">
-	<img src="http://placehold.it/940x528">
-	<img src="http://placehold.it/940x528">
-	<img src="http://placehold.it/940x528">
-	<img src="http://placehold.it/940x528">
+	<img src="../images/fannotate/slide1.jpg">
+	<img src="../images/fannotate/slide2.jpg">
 </div>
 
 

@@ -35,10 +35,15 @@
 }
 
 .shader {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.7);
 }
 
-
+%half,
+.half {
+	width: 48%;
+	margin: 1%;
+	float: left;
+}
 
 .cs-main {
 	width: 100%;
@@ -84,10 +89,26 @@
 }
 
 .cs--top-image {
-	margin-top: -300px;
+	margin-top: -400px;
+	max-width: 1000px;
 }
 
 %clear-max,
 .clear-max {
 	max-width: none;
+}
+
+.slidesjs-pagination-item a{
+	display: inline-block;
+	width: 15px;
+	float: left;
+	height: 15px;
+	background-color: white;
+	border-radius: 50%;
+	margin: 20px 5px;
+	border: 2px solid red;
+	text-indent: -99999px;
+	&.active {
+		background-color: red;
+	}
 }
