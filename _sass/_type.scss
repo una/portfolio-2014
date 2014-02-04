@@ -1,13 +1,16 @@
 @font-face {
-    font-family: 'Ampersand';
-    src: local('Baskerville'), local('Palatino'), local('Book Antiqua');
-    unicode-range: U+26;
+	font-family: 'Ampersand';
+	font-weight: 700;
+	src:  local('Oleo Script Swash Caps Bold'), local('OleoScriptSwashCaps-Bold'), url(http://themes.googleusercontent.com/static/fonts/oleoscriptswashcaps/v2/HMO3ftxA9AU5floml9c756HPCue0Y9p7kwQ7JKlwkwmzty3XAGWFpfUour78S_ql.woff) format('woff'), local('Oleo Script Swash Caps'), local('Baskerville'), local('Palatino'), local('Book Antiqua');
+	unicode-range: U+26;
 }
+
+
 @font-face {
-    /* Ampersand fallback font */
-    font-family: 'Ampersand';
-    src: local('Alegreya Sans SC Black'), local('AlegreyaSansSC-Black'), url(http://themes.googleusercontent.com/static/fonts/alegreyasanssc/v1/AjAmkoP1y0Vaad0UPPR462eUmuPaexXbuJ2iMbM_ZTs.woff) format('woff');
-    unicode-range: U+270C;
+	//fallback
+	font-family: 'Ampersand';
+	src: local('Alegreya Sans SC Black'), local('AlegreyaSansSC-Black'), url(http://themes.googleusercontent.com/static/fonts/alegreyasanssc/v1/AjAmkoP1y0Vaad0UPPR462eUmuPaexXbuJ2iMbM_ZTs.woff) format('woff');
+	unicode-range: U+270C;
 }
 
 %font-copy {
@@ -15,13 +18,18 @@
 	font-weight: 300; 
 }
 
-%font-title {
+%font-title--amp {
 	font-family: Ampersand, 'Alegreya Sans SC', sans-serif;
 	font-weight: 900; 
 }
 
+%font-title {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: 900; 
+}
+
 %font-blockquote {
-	font-family: Ampersand, 'Alegreya Sans SC', sans-serif;
+	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: 400; 
 }
 
@@ -125,6 +133,13 @@
 body {
 	@extend %font-copy;
 	font-size: 16px;
+}
+
+//bc Firefox doesn't support unicode-range
+.chrome h1,
+.chrome h2,
+.chrome h3 {
+	@extend %font-title--amp;
 }
 
 h1,

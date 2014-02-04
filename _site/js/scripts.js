@@ -101,3 +101,8 @@ $(document).bind('keydown',function(e){
 $('.js-fadeIn').waypoint(function() {
   $(this).css('opacity', '1');
 }, { offset: '25%' });
+
+//detect Chrome to fix ampersand bug bc firefox doesn't support unicode-range
+if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
+	$('html').addClass('chrome');
+}
