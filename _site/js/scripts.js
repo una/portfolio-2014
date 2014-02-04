@@ -95,3 +95,9 @@ $(document).bind('keydown',function(e){
 	9 -57
 	*/
 });
+
+// WAYPOINTS
+
+$('.js-fadeIn').waypoint(function() {
+  $(this).css('opacity', '1');
+}, { offset: '25%' });

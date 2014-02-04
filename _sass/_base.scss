@@ -62,3 +62,8 @@ hr {
 	top: 1px solid $color--copy;
 	bottom: 0px solid transparent;
 }
+
+.js-fadeIn {
+	@include transition-duration(0.8s);
+	opacity: 0;
+}
