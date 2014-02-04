@@ -20,11 +20,18 @@ $('#slide-controls li').each(function(index , item)
         });
 
 $(document).bind('keydown',function(e){
-	if (e.keyCode == 37) { 
+	if (e.keyCode == 76) { 
 		$('.slidesjs-previous').trigger('click');
 	}
-	if (e.keyCode == 39) { 
+	if (e.keyCode == 82) { 
 		$('.slidesjs-next').trigger('click');
+	}
+
+	if (e.keyCode == 37) { 
+		location.href = $('.pagination .left a').attr('href');
+	}
+	if (e.keyCode == 39) { 
+		location.href = $('.pagination .right a').attr('href');
 	}
 	
 	/* arrow keys:
@@ -32,5 +39,7 @@ $(document).bind('keydown',function(e){
 	38 - up
 	39 - right
 	40 - down
+	76 - L
+	82 - R
 	*/
 });

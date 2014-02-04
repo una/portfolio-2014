@@ -9,5 +9,6 @@
 	a {
 		text-decoration: none;
 		@include fontsize(12);
+		border-bottom: none;
 	}
 }

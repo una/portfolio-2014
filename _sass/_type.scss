@@ -47,6 +47,8 @@
 
 	a {
 		color: $color--orange;
+		border-bottom: 1px solid $color--orange;
+		
 		&:hover {
 			color: white;
 			background-color: $color--orange;
@@ -72,6 +74,8 @@
 
 	a {
 		color: $color--gold;
+		border-bottom: 1px solid $color--gold;
+		
 		&:hover {
 			color: white;
 			background-color: $color--gold;
@@ -97,6 +101,8 @@
 
 	a {
 		color: $color--blue;
+		border-bottom: 1px solid $color--blue;
+		
 		&:hover {
 			color: white;
 			background-color: $color--blue;
