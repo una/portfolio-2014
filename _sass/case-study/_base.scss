@@ -158,3 +158,13 @@
 		}
 	}
 }
+img.right,
+img.left {
+
+	@include breakpoint($layout-break) {
+		padding-left: 0;
+		padding-right: 0;
+		float: none;
+		margin: 0 auto;
+	}
+}

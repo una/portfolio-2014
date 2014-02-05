@@ -17,12 +17,20 @@ body {
 .left {
 	float: left;
 	padding-right: 2em;
+	
+	@include breakpoint($small-tab) {
+		padding-right: 0;
+	}
 }
 
 %right,
 .right {
 	float: right;
 	padding-left: 2em;
+	
+	@include breakpoint($small-tab) {
+		padding-left: 0;
+	}
 }
 
 .clear,
@@ -67,4 +75,16 @@ hr {
 .js-fadeIn {
 	@include transition-duration(0.8s);
 	opacity: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+blockquote,
+p,
+.contain-1100:not(img) {
+	@include breakpoint($page-container) {
+		margin: 0 1rem;
+	}
 }
