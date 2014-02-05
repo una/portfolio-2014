@@ -4,9 +4,8 @@
 	width: 100%;
 	
 		img {
-			width: 60%;
-			max-width: 600px;
 			margin: 0 auto;
+			max-width: 100%;
 		}
 
 		h2 {
@@ -28,13 +27,7 @@
 }
 
 .cs--bar {
-	text-decoration: none;
-	padding: 3rem;
-	width: 100%;
 	display: block;
-	position: relative;
-	overflow: hidden;
-	text-align: center;
 }
 
 .home-about {
