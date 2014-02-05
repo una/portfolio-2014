@@ -138,7 +138,7 @@ body {
 //bc Firefox doesn't support unicode-range
 .chrome h1,
 .chrome h2,
-.chrome h3 {
+.chrome h3,{
 	@extend %font-title--amp;
 }
 

@@ -43,6 +43,12 @@
 	width: 48%;
 	margin: 1%;
 	float: left;
+	
+	@include breakpoint($small-tab) {
+		clear: both;
+		width: 100%;
+		margin: 0;
+	}
 }
 
 .cs-main {
@@ -60,11 +66,21 @@
 		&.half-l {
 			max-width: 48%;
 			float: left;
+
+			@include breakpoint($small-tab){
+				clear: both;
+				max-width: 100%
+			}
 		}
 
 		&.half-r {
 			max-width: 48%;
 			float: right;
+
+			@include breakpoint($small-tab){
+				clear: both;
+				max-width: 100%
+			}
 		}
 	}
 	
@@ -101,6 +117,10 @@
 	max-width: none;
 }
 
+.slidesjs-pagination-item:first-child {
+	margin-left: 50%;
+}
+
 .slidesjs-pagination-item a{
 	display: inline-block;
 	width: 15px;
@@ -109,9 +129,32 @@
 	background-color: white;
 	border-radius: 50%;
 	margin: 20px 5px;
-	border: 2px solid red;
 	text-indent: -99999px;
-	&.active {
-		background-color: red;
+}
+
+.orange {
+	.slidesjs-pagination-item a{
+		border: 2px solid $color--orange;
+		&.active {
+			background-color: $color--orange;
+		}
+	}
+}
+
+.gold {
+	.slidesjs-pagination-item a{
+		border: 2px solid $color--gold;
+		&.active {
+			background-color: $color--gold;
+		}
+	}
+}
+
+.blue {
+	.slidesjs-pagination-item a{
+		border: 2px solid $color--blue;
+		&.active {
+			background-color: $color--blue;
+		}
 	}
 }

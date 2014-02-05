@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="description" content="The online portflio of Una Kravets, front end developer and graphic designer based in Washington, DC.">
+	<meta charset="UTF-8">
+	<title>  Fannotate |  </title>
+
+	<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900|Open+Sans:400italic,400,700,300|Oleo+Script+Swash+Caps:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../stylesheets/style.css">
+
+	<!-- MOBILE SETTINGS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="white" />
+
+	<!-- including jquery link in head bc slider size unique to each page, and I have to put it in the post file -->
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+</head>
+<body>
+
+<div class="menu-section">
+	<div class="menu-section__toggle">
+		<div class="toggle--1"></div>
+		<div class="toggle--2"></div>
+		<div class="toggle--3"></div>
+	</div>
+	<nav>
+		<ul role="navigation" class="hidden">
+			<li><a href="/">Work</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="http://blog.unakravets.com" target="_blank">Blog</a></li>
+			<li><a href="http://sketchbook.unakravets.com" target="_blank">Sketchbook</a></li>
+			<li><a href="http://twitter.com/una" target="_blank">Twitter</a></li>
+			<li><a href="http://codepen.io/unax3" target="_blank" >Codepen</a></li>
+			<li><a href="http://dribbbleboard.com/#una" target="_blank" >Dribbble</a></li>
+			<li><a href="http://github.com/una" target="_blank" >Github</a></li>
+		</ul>
+	</nav>
+</div>
+<header class="cs__intro-section contain-1100 orange">
+	<h1>Fannotate</h1>
+	<h3>Challenge:
+		<span class="marked"> Reimagine the way artists and fans create music together.</span>
+	</h3>
+	
+	<h3>Client: 
+			<span class="marked">Glassnote Records</span>
+		
+	</h3>
+	<h3>Roles: 
+		
+			<span class="marked">Research & Ideation</span>
+		
+			<span class="marked">UX Design</span>
+		
+			<span class="marked">Prototype Development</span>
+		
+	</h3>
+	<div class="cs__intro-bg">
+		<img src="../images/fannotate/bg.jpg" alt="Fannotate background">
+		<div class="shader"></div>
+	</div>
+</header>
+
+<main role="main" class="cs-main fannotate orange">
+	<div class="center-contain">
+		<div class="cs--top-image--container">
+			<img class="cs--top-image" src="../images/fannotate/top-fannotate.png" alt="Fannotate">
+		</div>
+		<h1 class="cs--inverted">A Music Collaboration App</h1>
+	</div>
+
+
+		<section class="contain-1100">
+			<script>
+  $(function(){
+	$(".slider").slidesjs({
+		width: 1448,
+		height: 500,
+		pagination: {
+			effect: 'fade',
+			active: true
+		},
+		callback: {
+			loaded: function(){
+				$('.slidesjs-navigation').hide(0);
+			}
+		},
+		play: {
+			auto: true,
+			effect: 'fade',
+			speed: 500,
+			pauseOnHover: true,
+			restartDelay: 2500
+		}
+	});
+});
+
+</script>
+
+<div class="row">
+	<h2>We Turned to People</h2>
+	<p>We went out in the wild -- we watched human behavior, took notes, and drew conclusions. We surveryed over 100 people ages 18-52 to learn about their music and entertainment prefernces, and a few conclusions were drawn:</p>
+	<div class="statistic">
+		<h2>73%</h2>
+		<p>Listened to music for over 7 hours a week</p>
+	</div>
+	<div class="statistic">
+		<h2>61%</h2>
+		<p>Also used social media for at least that long.</p>
+	</div>
+	<div class="statistic">
+		<h2>92%</h2>
+		<p>Listen to music or audio on their phones during their commute</p>
+	</div>
+</div>
+
+<img src="http://placehold.it/1100x500" alt="">
+<img class="half-l" src="http://placehold.it/600x600&text=600x600+.half-l" alt="">
+<img class="half-r" src="http://placehold.it/600x600&text=600x600+.half-r" alt="">
+
+<blockquote> “To design an easy-to-use interface, pay attention to what users do, not what they say. Self-reported claims are unreliable, as are user speculations about future behavior.”  – Jakob Nielsen
+</blockquote>
+
+<h2 class="center">Instant A/B Testing</h2>
+<p class="center">This app provides an <span>entirely new creation process.</span> Artists provide music samples or graphics (t-shirt choices, band posters, etc.) to directly recieve insight from fans. The entire process is driven by the power of communication, thus increasing its popularity and 'amping it up' for release time. It's instant A/B testing -- while making fans feel like a part of the band.</p>
+<blockquote class="center">It's all about collaboration & discovery.</blockquote>
+
+<h2>Wireframe, Re-Wireframe</h2>
+<p>It took a long time and several iterations based on user testing feedback, to solidify the outline of this design. While consulting with the team about user experience, I began the process of prototyping the app’s general interactions such as screen switching and menu flyouts.
+
+------------- --------
+</p>
+<div class="slider"> 
+	<img src="../images/fannotate/slide1.jpg">
+	<img src="../images/fannotate/slide2.jpg">
+</div>
+
+<h2>Discovery</h2>
+<p>With all of Glassnote records' artists present on the app, discorvery ------- yay glassnote</p>
+
+<blockquote class="center">Making fans feel like a part of the band. Giving artists instant feedback. Promoting the talent within a record label &mdash; <span class="orange"> </div>That's Fannotate.</span></blockquote>
+
+
+
+
+		</section>
+	</main>
+<div class="pagination orange">
+	<div class="contain-1100">
+		<div class="left"> 
+			
+		<a href="/" title="Home">&laquo; Home</a>
+			 
+		</div> 
+
+		<div class="right"> 
+			 
+				<a href="/harry-potter" title="next Post: 
+	Harry Potter">Harry Potter &raquo; </a>
+			 
+		</div>
+	</div>
+</div>
+
+<footer role="contentinfo">
+	<p>&copy; Una Kravets 2014. Made with &hearts; in Jekyll. View the <a href="/styleguide">styleguide</a>, or the <a href="http://github.com/una/portfolio-2014" target="_blank">source code</a>.</p>
+	<p>If you want to contact me, email una@ukrave.us. It's as simple as that. If you're nice, I promise to respond :)</p>
+</footer>
+
+</body>
+	
+	<script src="../js/vendor/jquery.slides.min.js"></script>
+	<script src="../js/vendor/waypoints.min.js"></script>
+	<script src="../js/scripts.js"></script>
+</html>
