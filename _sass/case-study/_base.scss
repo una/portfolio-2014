@@ -101,10 +101,6 @@
 			@include fontsize(10);
 		}
 	}
-
-	a {
-		@extend %font-title;
-	}
 }
 
 .cs--top-image {

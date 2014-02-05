@@ -53,6 +53,7 @@
 .orange {
 	color: $color--orange;
 
+
 	a {
 		color: $color--orange;
 		border-bottom: 1px solid $color--orange;
@@ -67,8 +68,11 @@
 		background-color: $color--orange;
 		@extend %white;
 	}
-	p span {
-		border-bottom: 1px solid $color--orange;
+	p {
+		color: $color--grey;
+		span {
+			border-bottom: 1px solid $color--orange;
+		}
 	}
 
 	blockquote span {
@@ -79,6 +83,7 @@
 %gold,
 .gold {
 	color: $color--gold;
+
 
 	a {
 		color: $color--gold;
@@ -94,8 +99,12 @@
 		background-color: $color--gold;
 		@extend %white;
 	}
-	p span {
-		border-bottom: 1px solid $color--gold;
+	p {
+		color: $color--grey;
+
+		span {
+			border-bottom: 1px solid $color--gold;
+		}
 	}
 
 	blockquote span {
@@ -121,8 +130,12 @@
 		background-color: $color--blue;
 		@extend %white;
 	}
-	p span {
-		border-bottom: 1px solid $color--blue;
+	p {
+		color: $color--grey;
+		
+		span {
+			border-bottom: 1px solid $color--blue;
+		}
 	}
 
 	blockquote span {
@@ -231,6 +244,10 @@ p {
 		-ms-text-align: left;
 		text-align: left;
 	}
+}
+
+a {
+	@extend %font-title;
 }
 
 h3 {

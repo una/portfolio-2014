@@ -5,7 +5,9 @@
 	
 		img {
 			margin: 0 auto;
-			max-width: 100%;
+			width: 100%;
+			display: block;
+			max-width: 1200px;
 		}
 
 		h2 {
@@ -31,10 +33,15 @@
 }
 
 .home-about {
-	height: 600px;
+	height: 400px;
 	display: block;
+	// background-image: image-url('home/me-sketch.jpg');
+	// background-size: 500px;
+	// background-repeat: no-repeat;
+	// background-position: 0% 120px;
+	// border-bottom: 1px solid black;
 	background-image: image-url('home/una-kravets.png');
-	background-size: 800px;
+	background-size: 500px;
 	background-repeat: no-repeat;
 	background-position: 0% 100%;
 	border-bottom: 1px solid black;
