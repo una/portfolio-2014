@@ -160,6 +160,10 @@ h1 {
 	@include breakpoint($phone-horiz) {
 		@include fontsize(28);
 	}
+	@include breakpoint($phone-vert) {
+		@include fontsize(20);
+	}
+
 }
 
 blockquote {
@@ -168,6 +172,19 @@ blockquote {
 	max-width: 800px;
 	margin: 1.5em 0;
 	color: $color--copy--dark;
+	
+	@include breakpoint($tab-horiz) {
+		@include fontsize(20);
+	}
+	@include breakpoint($small-tab) {
+		@include fontsize(18);
+	}
+	@include breakpoint($phone-horiz) {
+		@include fontsize(16);
+	}
+	@include breakpoint($phone-vert) {
+		@include fontsize(14);
+	}
 	
 	&:not(.push) {
 		position: relative;
@@ -195,10 +212,25 @@ a {
 
 h2 {
 	@include fontsize(42);
+	@include breakpoint($tab-horiz) {
+		@include fontsize(36);
+	}
+	@include breakpoint($small-tab) {
+		@include fontsize(28);
+	}
+	@include breakpoint($phone-horiz) {
+		@include fontsize(24);
+	}
 }
 
 p {
 	color: $color--copy;
+	
+	&.center {
+		max-width: 600px;
+		-ms-text-align: left;
+		text-align: left;
+	}
 }
 
 h3 {

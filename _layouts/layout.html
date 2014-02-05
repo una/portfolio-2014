@@ -5,7 +5,12 @@
 	<meta charset="UTF-8">
 	<title> {% if page.title %} {{ page.title }} | {% endif %} {{ site.title }}</title>
 
-	<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900|Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
+	<!-- MOBILE SETTINGS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="white" />
+
+	<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,900|Open+Sans:400italic,400,700,300|Oleo+Script+Swash+Caps:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="stylesheets/style.css">
 
 </head>
@@ -16,10 +21,11 @@
       {{ content }}
     </section>
     <footer role="contentinfo">
-    	<p>&copy; Una Kravets 2014. Made with &hearts; in Jekyll. View the <a href="/styleguide.html">styleguide</a>, or the <a href="/base">base layout</a>.</p>
+    	<p>&copy; Una Kravets 2014. Made with &hearts; in Jekyll. View the <a href="/styleguide">styleguide</a>, or the <a href="http://github.com/una/portfolio-2014" target="_blank">source code</a>.</p>
     	<p>If you want to contact me, email una@ukrave.us. It's as simple as that. If you're nice, I promise to respond :)</p>
     </footer>
 </body>
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script src="../js/scripts.js"></script>
+	<script src="js/vendor/waypoints.min.js"></script>
+	<script src="js/scripts.js"></script>
 </html>

@@ -66,7 +66,7 @@ nav ul{
 		@include transition-duration(0.5s);
 		text-decoration: none;
 		color: white;
-		font-size: 3em;
+		@include fontsize(25);
 		line-height: 1.5;
 		width: 100%;
 		display: block;
@@ -74,5 +74,12 @@ nav ul{
 				background-color: rgba(255,255,255,0.8);
 				color: $color--orange;
 			}
+
+		@include breakpoint($small-tab) {
+			@include fontsize(20);
 		}
+		@include breakpoint($phone-horiz) {
+			@include fontsize(16);
+		}
+	}
 }

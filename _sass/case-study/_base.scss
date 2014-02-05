@@ -75,10 +75,14 @@
 	p {
 		max-width: 650px;
 		@include fontsize(12);
-		line-height: 1.4;
+		line-height: 1.6;
 		
 		&.clear-max {
 			max-width: none;
+		}
+
+		@include breakpoint($phone-horiz) {
+			@include fontsize(10);
 		}
 	}
 

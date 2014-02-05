@@ -6,18 +6,18 @@ $(".menu-section__toggle").on('click', function() {
 
 //slider
 $('.slide').each(function()
-        {
-            $('#slide-controls').append('<li></li>');
-        });
+		{
+			$('#slide-controls').append('<li></li>');
+		});
 
 $('#slide-controls li').each(function(index , item)
-        {
-            $(item).on('click' , function()
-            {
-                $('.slidesjs-pagination li a').eq(index).trigger('click');
-            })
+		{
+			$(item).on('click' , function()
+			{
+				$('.slidesjs-pagination li a').eq(index).trigger('click');
+			})
 
-        });
+		});
 
 //KEYBOARD PRESSES
 $(document).bind('keydown',function(e){
@@ -50,10 +50,10 @@ $(document).bind('keydown',function(e){
 	}
 
 	//slider with + & -
-	else if (e.keyCode == 189) { 
+	if (e.keyCode == 189) { 
 		$('.slidesjs-previous').trigger('click');
 	}
-	else if (e.keyCode == 187) { 
+	if (e.keyCode == 187) { 
 		$('.slidesjs-next').trigger('click');
 	}
 
@@ -68,7 +68,7 @@ $(document).bind('keydown',function(e){
 	}
 
 	// ? to tell you commands
-	else if (e.keyCode == 191) { 
+	if (e.keyCode == 191) { 
 		alert('m: open menu, then press 1-9 to navigate the menu, left arrow: previous project, right arrow: next project, L: prev. slide (slider), R: next slide (slider), +: next page (turn.js), -: previous page, ?: key');
 	}
 	

@@ -12,7 +12,7 @@ title: Una Kravets' Portfolio
 
 		<ul class="cs--list">
 			{% for post in site.posts %}
-			<li>
+			<li class="{{ post.color }}">
 				<a class="cs--bar" href="{{ post.url }}">
 					<img src="{{ post.image-index }}" alt="{{ post.title }}"></img>
 					<h2>{{ post.title }}</h2>

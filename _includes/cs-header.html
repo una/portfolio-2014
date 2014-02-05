@@ -3,6 +3,11 @@
 	<h3>Challenge:
 		<span class="marked"> {{ page.challenge }}</span>
 	</h3>
+	{% if page.client %}
+	<h3>Client: 
+			<span class="marked">{{ page.client }}</span>
+		{% endif %}
+	</h3>
 	<h3>Roles: 
 		{% for role in page.roles %}
 			<span class="marked">{{ role }}</span>

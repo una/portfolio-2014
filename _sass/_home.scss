@@ -4,32 +4,35 @@
 	width: 100%;
 	
 		img {
-			height: 50px;
-			width: 50px;
-			float: left;
+			width: 60%;
+			max-width: 600px;
+			margin: 0 auto;
 		}
 
 		h2 {
-			color: white;
 			@include fontsize(36); 
 		}
 
-		&:nth-child(3n+1) {
-			background-color: $color--gold;
-		}		
-		&:nth-child(3n+2) {
-			background-color: $color--blue;
-		}		
-		&:nth-child(3n+3) {
-			background-color: $color--orange;
+		.gold h2{
+			color: $color--gold;
+		}
+
+		.blue h2{
+			color: $color--blue;
+		}
+
+		.orange h2{
+			color: $color--orange;
 		}
 	}
 }
 
 .cs--bar {
 	text-decoration: none;
-	padding: 4em;
+	padding: 3rem;
 	width: 100%;
-	height: 100%;
 	display: block;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
 }
