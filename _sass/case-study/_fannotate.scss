@@ -28,18 +28,36 @@
 	}
 }
 
+.fannotate .iphone {
+
+	@include breakpoint($tab-horiz) {
+		float: none;
+		margin: 0 auto;
+		max-width: 355px;
+		padding-left: 0;
+	}
+
+}
+
 .fannouts {
 	position: absolute;
 	right: 280px;
 	top: 70px;
 	opacity: 0;
 	
+	@include breakpoint($page-container) {
+		right: 150px;
+	}
+	@include breakpoint($layout-break) {
+		display: none; 
+	}
+	
 	div {
 		display: block;
 		position: absolute;
 		@include background-size(100%);
 		@include transition-duration(0.8s);
-		@include transform(rotate(0deg) translate(0,0));
+		@include transform(rotate(0deg));
 	}
 
 	&.opened {
@@ -47,31 +65,31 @@
 			background-image: image-url('../images/fannotate/Q5.jpg');
 			width: (586/1.5)+px;
 			height: (744/1.5)+px;
-			@include transform(rotate(-10deg) translate(-110px, -55px));	
+			@include transform(rotate(-120deg));	
 		}
 		.fan-2 {
 			background-image: image-url('../images/fannotate/Q4.jpg');
 			width: (531/1.5)+px;
 			height: (833/1.5)+px;
-			@include transform(rotate(-40deg));
+			@include transform(rotate(-80deg));
 		}
 		.fan-3 {
 			background-image: image-url('../images/fannotate/Q3.jpg');
 			width: (492/1.5)+px;
 			height: (831/1.5)+px;
-			@include transform(rotate(-70deg));
+			@include transform(rotate(-60deg));
 		}
 		.fan-4 {
 			background-image: image-url('../images/fannotate/Q2.jpg');
 			width: (460/1.5)+px;
 			height: (833/1.5)+px;
-			@include transform(rotate(-100deg));
+			@include transform(rotate(-40deg));
 		}
 		.fan-5 {
 			background-image: image-url('../images/fannotate/Q1.jpg');
 			width: (529/1.5)+px;
 			height: (835/1.5)+px;
-			@include transform(rotate(-120deg));
+			@include transform(rotate(-20deg));
 		}
 	}
 }
