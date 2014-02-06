@@ -49,98 +49,49 @@
 	color: white;
 }
 
-%orange,
-.orange {
-	color: $color--orange;
+@mixin color-specific($var-name) {
+	color: $var-name;
 
 
 	a {
-		color: $color--orange;
-		border-bottom: 1px solid $color--orange;
+		color: $var-name;
+		border-bottom: 1px solid $var-name;
 		
 		&:hover {
 			color: white;
-			background-color: $color--orange;
+			background-color: $var-name;
 		}
 	}
 	
 	.cs--inverted {
-		background-color: $color--orange;
+		background-color: $var-name;
 		@extend %white;
 	}
 	p {
 		color: $color--grey;
 		span {
-			border-bottom: 1px solid $color--orange;
+			border-bottom: 1px solid $var-name;
 		}
 	}
 
 	blockquote span {
-		color: $color--orange;
+		color: $var-name;
 	}
+}
+
+%orange,
+.orange {
+	@include color-specific(tomato);
 }
 
 %gold,
 .gold {
-	color: $color--gold;
-
-
-	a {
-		color: $color--gold;
-		border-bottom: 1px solid $color--gold;
-		
-		&:hover {
-			color: white;
-			background-color: $color--gold;
-		}
-	}
-	
-	.cs--inverted {
-		background-color: $color--gold;
-		@extend %white;
-	}
-	p {
-		color: $color--grey;
-
-		span {
-			border-bottom: 1px solid $color--gold;
-		}
-	}
-
-	blockquote span {
-		color: $color--gold;
-	}
+	@include color-specific(tomato);
 }
 
 %blue,
 .blue {
-	color: $color--blue;
-
-	a {
-		color: $color--blue;
-		border-bottom: 1px solid $color--blue;
-		
-		&:hover {
-			color: white;
-			background-color: $color--blue;
-		}
-	}
-	
-	.cs--inverted {
-		background-color: $color--blue;
-		@extend %white;
-	}
-	p {
-		color: $color--grey;
-		
-		span {
-			border-bottom: 1px solid $color--blue;
-		}
-	}
-
-	blockquote span {
-		color: $color--blue;
-	}
+	@include color-specific(cornflowerblue);
 }
 
 body {

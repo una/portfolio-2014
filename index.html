@@ -15,12 +15,11 @@ title: Una Kravets' Portfolio
 		{{ content }}
 
 		<ul class="cs--list">
-		{% for post in site.posts %}
+		{% for post in site.posts reversed %}
 			{% if post.title != 'Style Guide' %}
 			<li class="{{ post.color }}">
 				<a class="cs--bar" href="{{ post.url }}">
 					<img src="{{ post.image-index }}" alt="{{ post.title }}"></img>
-					<!-- <h2>{{ post.title }}</h2> -->
 				</a>
 			</li>
 		 	{% endif %}

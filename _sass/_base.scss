@@ -1,7 +1,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	//background-color: $color--grey;
 }
 
 * {
@@ -12,6 +11,12 @@ body {
 .contain-1100 {
 	max-width: 1100px;
 	margin: 0 auto;
+}
+
+.hide-sm {
+	@include breakpoint($small-tab) {
+		display: none !important; //used an important b/c it overrides all rules, no matter what, and it's going to be used on everything -- from js to gifs to images of all sorts of locations and classes
+	}
 }
 
 %left,
