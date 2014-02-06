@@ -99,10 +99,15 @@ $(document).bind('keydown',function(e){
 // WAYPOINTS
 
 $('.js-fadeIn').waypoint(function() {
-  $(this).css('opacity', '1');
+	$(this).css('opacity', '1');
 }, { offset: '25%' });
 
 //detect Chrome to fix ampersand bug bc firefox doesn't support unicode-range
 if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
 	$('html').addClass('chrome');
 }
+
+// FANNOTATE 
+$('.fannouts').waypoint(function() {
+	$(this).css('opacity', '1').addClass('opened');
+}, { offset: '25%' });

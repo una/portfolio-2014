@@ -27,3 +27,51 @@
 		padding: 0.5em;
 	}
 }
+
+.fannouts {
+	position: absolute;
+	right: 280px;
+	top: 70px;
+	opacity: 0;
+	
+	div {
+		display: block;
+		position: absolute;
+		@include background-size(100%);
+		@include transition-duration(0.8s);
+		@include transform(rotate(0deg) translate(0,0));
+	}
+
+	&.opened {
+		.fan-1 {
+			background-image: image-url('../images/fannotate/Q5.jpg');
+			width: (586/1.5)+px;
+			height: (744/1.5)+px;
+			@include transform(rotate(-10deg) translate(-110px, -55px));	
+		}
+		.fan-2 {
+			background-image: image-url('../images/fannotate/Q4.jpg');
+			width: (531/1.5)+px;
+			height: (833/1.5)+px;
+			@include transform(rotate(-40deg));
+		}
+		.fan-3 {
+			background-image: image-url('../images/fannotate/Q3.jpg');
+			width: (492/1.5)+px;
+			height: (831/1.5)+px;
+			@include transform(rotate(-70deg));
+		}
+		.fan-4 {
+			background-image: image-url('../images/fannotate/Q2.jpg');
+			width: (460/1.5)+px;
+			height: (833/1.5)+px;
+			@include transform(rotate(-100deg));
+		}
+		.fan-5 {
+			background-image: image-url('../images/fannotate/Q1.jpg');
+			width: (529/1.5)+px;
+			height: (835/1.5)+px;
+			@include transform(rotate(-120deg));
+		}
+	}
+}

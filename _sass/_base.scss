@@ -13,6 +13,18 @@ body {
 	margin: 0 auto;
 }
 
+%contain-1200,
+.contain-1200 {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+%contain-1300,
+.contain-1300 {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
 .hide-sm {
 	@include breakpoint($small-tab) {
 		display: none !important; //used an important b/c it overrides all rules, no matter what, and it's going to be used on everything -- from js to gifs to images of all sorts of locations and classes

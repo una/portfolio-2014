@@ -83,7 +83,7 @@
 		color: $color--grey;
 	}
 
-	span {
+	span:not(.marked) {
 		border-bottom: 1px solid $var-name;
 	}
 
