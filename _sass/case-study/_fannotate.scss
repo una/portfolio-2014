@@ -10,11 +10,20 @@
 }
 
 .fannotate blockquote {
-	margin-bottom: 2em;
 	max-width: 830px;
 }
 
-// Prevents slides from flashing 
-.slider {
-	display:none;
+.fannotate--gif {
+	position: absolute;
+	z-index: 2;
+	padding: 106px 36px;
+}
+
+.fannotate--iphone5s {
+	width: 355px;
+	right: 0;
+	
+	@include breakpoint($phone-horiz) {
+		padding: 0.5em;
+	}
 }

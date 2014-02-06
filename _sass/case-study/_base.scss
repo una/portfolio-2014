@@ -103,6 +103,20 @@
 	}
 }
 
+
+.bullets {
+	li {
+		margin-left: 1em;
+		line-height: 1.5;
+	}
+
+	li:before {
+		content: "• ";
+	}
+
+	margin: 1em 0;
+}
+
 .cs--top-image {
 	margin-top: -400px;
 	max-width: 90%;
@@ -163,4 +177,9 @@ img.left {
 		float: none;
 		margin: 0 auto;
 	}
+}
+
+.slider {
+	display:none;
+	margin: 4em 0;
 }

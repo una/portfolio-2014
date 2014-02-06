@@ -49,9 +49,13 @@
 	color: white;
 }
 
+%clearfix,
+.clearfix {
+	clear: both;
+}
+
 @mixin color-specific($var-name) {
 	color: $var-name;
-
 
 	a {
 		color: $var-name;
@@ -62,6 +66,14 @@
 			background-color: $var-name;
 		}
 	}
+
+	h3 {
+		color: $var-name;
+	}
+
+	li {
+		color: $color--copy;
+	}
 	
 	.cs--inverted {
 		background-color: $var-name;
@@ -69,12 +81,17 @@
 	}
 	p {
 		color: $color--grey;
-		span {
-			border-bottom: 1px solid $var-name;
-		}
+	}
+
+	span {
+		border-bottom: 1px solid $var-name;
 	}
 
 	blockquote span {
+		color: $var-name;
+	}
+
+	.bullets li:before {
 		color: $var-name;
 	}
 }
@@ -132,6 +149,7 @@ h1 {
 
 blockquote {
 	@extend %font-blockquote;
+	@extend %clearfix;
 	@include fontsize(24);
 	max-width: 800px;
 	margin: 1.5em 0;
