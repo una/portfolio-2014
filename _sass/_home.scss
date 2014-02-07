@@ -37,23 +37,23 @@
 }
 
 .home-about {
-	height: 400px;
+	height: 300px;
 	display: block;
-	background-image: image-url('home/una-kravets.png');
-	background-size: 500px;
-	background-repeat: no-repeat;
-	background-position: 0% 100%;
-	border-bottom: 1px solid black;
+	background-color: $color--grey;
+	// background-image: image-url('home/una-kravets.png');
+	// background-size: 500px;
+	// background-repeat: no-repeat;
+	// background-position: 0% 100%;
+	// border-bottom: 1px solid black;
 }
 
 .about-me {
-	max-width: 550px;
-	float: right;
-	padding: 5em;
 	h1 {
 		line-height: 2;
+		color: white;
 	}
 	p {
 		line-height: 1.4;
+		color: black;
 	}
 }

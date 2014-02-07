@@ -93,3 +93,13 @@
 		}
 	}
 }
+
+.fannotate--bottom {
+	width: 21%;
+	margin: 0 2%;
+	float: left;
+	
+	@include breakpoint($small-tab) {
+		width:46%;
+	}
+}

@@ -75,7 +75,7 @@
 		color: $color--copy;
 	}
 	
-	.cs--inverted {
+	.inverted {
 		background-color: $var-name;
 		@extend %white;
 	}
@@ -94,6 +94,18 @@
 	.bullets li:before {
 		color: $var-name;
 	}
+
+	.slidesjs-pagination-item a{
+		border: 2px solid $var-name;
+		&.active {
+			background-color: $var-name;
+		}
+	}
+}
+
+%orange,
+.orange {
+	@include color-specific(tomato);
 }
 
 %orange,
@@ -181,6 +193,7 @@ blockquote {
 }
 
 .cs--inverted {
+	@extend .inverted;
 	margin: 1em auto 1.5em;
 	display: inline-block;
 	padding: 0.2em 0.5em;

@@ -111,3 +111,6 @@ if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
 $('.fannouts').waypoint(function() {
 	$(this).css('opacity', '1').addClass('opened');
 }, { offset: '25%' });
+$('.js-invert').waypoint(function() {
+	$(this).addClass('inverted');
+}, { offset: '45%' });

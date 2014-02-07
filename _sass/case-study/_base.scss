@@ -131,7 +131,7 @@
 	margin-left: 50%;
 }
 
-.slidesjs-pagination-item a{
+.slidesjs-pagination-item a {
 	display: inline-block;
 	width: 15px;
 	float: left;
@@ -142,35 +142,8 @@
 	text-indent: -99999px;
 }
 
-.orange {
-	.slidesjs-pagination-item a{
-		border: 2px solid $color--orange;
-		&.active {
-			background-color: $color--orange;
-		}
-	}
-}
-
-.gold {
-	.slidesjs-pagination-item a{
-		border: 2px solid $color--gold;
-		&.active {
-			background-color: $color--gold;
-		}
-	}
-}
-
-.blue {
-	.slidesjs-pagination-item a{
-		border: 2px solid $color--blue;
-		&.active {
-			background-color: $color--blue;
-		}
-	}
-}
 img.right,
 img.left {
-
 	@include breakpoint($layout-break) {
 		padding-left: 0;
 		padding-right: 0;
@@ -182,4 +155,8 @@ img.left {
 .slider {
 	display:none;
 	margin: 4em 0;
+}
+
+.js-invert {
+	@include transition-duration(0.8s);
 }
