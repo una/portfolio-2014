@@ -96,6 +96,14 @@ $(document).bind('keydown',function(e){
 	*/
 });
 
+// HEadroom
+// grab an element
+var myElement = document.getElementsByClassName("menu-section")[0];
+// construct an instance of Headroom, passing the element
+var headroom  = new Headroom(myElement);
+// initialise
+headroom.init(); 
+
 // WAYPOINTS
 
 $('.js-fadeIn').waypoint(function() {
@@ -113,4 +121,4 @@ $('.fannouts').waypoint(function() {
 }, { offset: '25%' });
 $('.js-invert').waypoint(function() {
 	$(this).addClass('inverted');
-}, { offset: '45%' });
+}, { offset: '50%' });

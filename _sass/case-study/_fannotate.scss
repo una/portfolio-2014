@@ -103,3 +103,7 @@
 		width:46%;
 	}
 }
+
+.fannotate .slidesjs-pagination-item {
+	@extend %hide-sm;
+}

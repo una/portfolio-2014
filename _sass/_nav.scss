@@ -3,6 +3,11 @@
 	position: absolute;
 	width: 100%;
 	top: 0;
+	height: 75px;
+	
+	&.homepage {
+		background-color: black;
+	}
 
 	@include transition-duration(0.3s);
 	
@@ -41,7 +46,7 @@
 
 .toggle--1,
 .toggle--2,
-.toggle--3{
+.toggle--3 {
 	width: 100%;
 	height: 5px;
 	background: white;
@@ -81,5 +86,28 @@ nav ul{
 		@include breakpoint($phone-horiz) {
 			@include fontsize(16);
 		}
+	}
+}
+
+.headroom--unpinned {
+	top: -75px;
+}
+
+.headroom--pinned {
+	position: fixed; //**this is causing error!!
+	top: 0;
+	&.homepage {
+		.toggle--1,
+		.toggle--2,
+		.toggle--3 {
+			background: white;
+		}
+	}
+	
+	
+	.toggle--1,
+	.toggle--2,
+	.toggle--3 {
+		background: black;
 	}
 }

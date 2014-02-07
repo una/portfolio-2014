@@ -25,6 +25,7 @@ body {
 	margin: 0 auto;
 }
 
+%hide-sm,
 .hide-sm {
 	@include breakpoint($small-tab) {
 		display: none !important; //used an important b/c it overrides all rules, no matter what, and it's going to be used on everything -- from js to gifs to images of all sorts of locations and classes
