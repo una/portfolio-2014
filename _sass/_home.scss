@@ -47,6 +47,10 @@
 	margin: 0 auto;
 	text-align: center;
 	
+	@include breakpoint($phone-horiz) {
+		padding: 3em 0 1em;
+	}
+	
 	h1 {
 		line-height: 2;
 		color: white;
@@ -58,5 +62,11 @@
 		line-height: 1.4;
 		color: white;
 		margin-top: -1em;
+		max-width: 300px;
+		margin: 0 auto;
+
+		@include breakpoint($phone-horiz) {
+			@include fontsize(12)
+		}
 	}
 }
