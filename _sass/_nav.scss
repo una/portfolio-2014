@@ -1,15 +1,11 @@
 .menu-section {
-	z-index: 10;
-	position: absolute;
-	width: 100%;
-	top: 0;
+	@include transition-duration(0.8s);
 	height: 75px;
-	
-	&.homepage {
-		background-color: black;
-	}
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 10;
 
-	@include transition-duration(0.3s);
 	
 	&.on {
 	z-index: 10;
@@ -110,4 +106,9 @@ nav ul{
 	.toggle--3 {
 		background: black;
 	}
+}
+
+.logo {
+	color: white;
+	padding: 1em;
 }

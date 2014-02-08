@@ -96,16 +96,21 @@ $(document).bind('keydown',function(e){
 	*/
 });
 
-// HEadroom
-// grab an element
+// Headroom
 var myElement = document.getElementsByClassName("menu-section")[0];
-// construct an instance of Headroom, passing the element
 var headroom  = new Headroom(myElement);
-// initialise
 headroom.init(); 
 
-// WAYPOINTS
+$(document).scroll(function (){
+	if ($(document).scrollTop() <= 600) {
+		$('.toggle--1, .toggle--2, .toggle--3').css('background', 'white');
+	}
+	else {
+		$('.toggle--1, .toggle--2, .toggle--3').css('background', 'black');
+	}
+});
 
+// WAYPOINTS
 $('.js-fadeIn').waypoint(function() {
 	$(this).css('opacity', '1');
 }, { offset: '25%' });
