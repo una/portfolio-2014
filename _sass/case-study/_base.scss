@@ -160,3 +160,12 @@ img.left {
 .js-invert {
 	@include transition-duration(1s);
 }
+
+.pull-link {
+	@extend .inverted;
+	@include fontsize(18);
+	margin: 2em auto;
+	display: inline-block;
+	text-align: center;
+	padding: 0.2em 0.7em;
+}

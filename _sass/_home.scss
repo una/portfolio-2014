@@ -39,11 +39,13 @@
 .home-about {
 	display: block;
 	background-color: $color--grey;
-	padding: 0 1em 1.5em;
+	padding: 0 1em 2em;
 }
 
 .about-me {
 	max-width: 440px;
+	margin: 0 auto;
+	text-align: center;
 	
 	h1 {
 		line-height: 2;
@@ -51,7 +53,10 @@
 	}
 
 	p {
+		@extend %white;
+		@include fontsize(16);
 		line-height: 1.4;
-		color: black;
+		color: white;
+		margin-top: -1em;
 	}
 }
