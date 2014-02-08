@@ -107,10 +107,3 @@ p {
 		margin-right: 1rem;
 	}
 }
-
-ul:not(.cs--list),
-ol {
-	@include breakpoint($page-container) {
-		margin-left: 2rem;
-	}
-}
