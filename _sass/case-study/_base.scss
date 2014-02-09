@@ -202,3 +202,12 @@
 		max-width: 100%
 	}
 }
+
+.max-60 {
+	max-width: 60%;
+}
+
+pre {
+	max-width: 100%;
+	overflow: scroll;
+}

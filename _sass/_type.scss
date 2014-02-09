@@ -271,3 +271,19 @@ small {
 	color: $color--copy;
 	@extend %font-copy; 
 }
+
+.hljs {
+	font-family: 'Courier New', 'Courier' monotype;
+	padding: 1em 0 2em;
+	overflow: scroll;
+	
+	span {
+		border-bottom: none;
+		padding-bottom: 1em;
+	}
+}
+
+code,
+pre {
+	overflow: scroll;
+}

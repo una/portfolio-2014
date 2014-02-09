@@ -12,16 +12,59 @@ image-index: "../images/proofessor/index.svg"
 image-bg: "../images/proofessor/bg.jpg"
 image-top: "../images/proofessor/top.png"
 ---
+ <script src="../js/vendor/highlight.pack.js"></script>
+<script>
+	$(document).ready(function() {
+		$('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+	});
+</script>
+<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/zenburn.min.css">
 
+<h2>When You Can Make Anything</h2>
 <h3>The Team:</h3>
 	<p>
 		<span>Jo-Yee Pang</span>: User Experience Design<br>
 		<span>Eli VanAlsburg</span>: Interface Design, Illustration<br>
 		<span>Erica Bond</span>: Project Management<br>
 	</p>
+<br>
+<blockquote class="push">We wanted to create <span>something we could use</span> &mdash; something tangible that we could share with others.</blockquote>
+
+<p>Proofessor is a simple drink mixing app where you control the inputs</p>
+
+<h2>Building with Craft</h2>
+
+<h2>It's the Little Things</h2>
+
 <img src="../images/proofessor/logo-shake.gif" alt="proofessor logo" class="center">
 
 <img src="../images/proofessor/bottle-drain.gif" alt="drinks" class="center">
+
+<h2>JS Intensive</h2>
+<pre><code>
+	window.PROOF || (PROOF = {}); //define a namespace (only ONCE) -- I used PROOF for Proofessor
+	(function($, window, document, undefined) {
+	  var _common = PROOF.common = { //this is your js object
+	    init: function() {
+	    this.setVars();
+	    this.bindEvents();
+	  },
+	  setVars: function() {
+	    // set all variables here
+	    this.helloString = "hello" ; // also _common.helloString
+	  },
+	  bindEvents: function() {
+	    // set event listeners for your functions here
+	  },
+	  // the rest of your functions go here
+	  _common.init(); // don't forget to init!
+	})(jQuery, window, document);
+</code></pre>
+
+<h2>Defending Simplicity</h2>
+<blockquote class="center push">As a front end developers, we often want to say "yes" to everything, but knowing when a task is too expensive &mdash; saying 'no' &mdash; is an important skill to have.</blockquote>
+
+<h2>A Team Effort</h2>
 
 <h2>Go Ahead, Try it Yourself</h2>
 <iframe src="http://proofessor.co/" height="568px" width="320px" frameborder="0"></iframe>
