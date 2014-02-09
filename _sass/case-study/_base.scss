@@ -62,10 +62,23 @@
 		margin-top: 1em;
 		margin-bottom: 3em;
 		display: block;
+		
+		&.right,
+		&.left {
+			max-width: 51%;
+			
+			@include breakpoint($layout-break) {
+				padding-left: 0;
+				padding-right: 0;
+				float: none;
+				margin: 0 auto;
+			}
+		}
 
 		&.half-l {
 			max-width: 48%;
 			float: left;
+			margin-right: 2%;
 
 			@include breakpoint($small-tab){
 				clear: both;
@@ -76,6 +89,7 @@
 		&.half-r {
 			max-width: 48%;
 			float: right;
+			margin-left: 2%;
 
 			@include breakpoint($small-tab){
 				clear: both;
@@ -149,16 +163,6 @@
 	text-indent: -99999px;
 }
 
-img.right,
-img.left {
-	@include breakpoint($layout-break) {
-		padding-left: 0;
-		padding-right: 0;
-		float: none;
-		margin: 0 auto;
-	}
-}
-
 .slider {
 	display:none;
 	margin: 4em 0;
@@ -175,4 +179,26 @@ img.left {
 	display: inline-block;
 	text-align: center;
 	padding: 0.2em 0.7em;
+}
+
+.other-l {
+	max-width: 48%;
+	float: left;
+	margin-right: 2%;
+
+	@include breakpoint($small-tab){
+		clear: both;
+		max-width: 100%
+	}
+}
+
+.other-r {
+	max-width: 48%;
+	float: right;
+	margin-left: 2%;
+
+	@include breakpoint($small-tab){
+		clear: both;
+		max-width: 100%
+	}
 }
