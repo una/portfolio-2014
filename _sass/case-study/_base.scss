@@ -65,7 +65,6 @@
 		
 		&.right,
 		&.left {
-			max-width: 51%;
 			
 			@include breakpoint($layout-break) {
 				padding-left: 0;
@@ -199,15 +198,15 @@
 
 	@include breakpoint($small-tab){
 		clear: both;
-		max-width: 100%
+		max-width: 100%;
 	}
 }
 
 .max-60 {
 	max-width: 60%;
-}
-
-pre {
-	max-width: 100%;
-	overflow: scroll;
+	
+	@include breakpoint($small-tab){
+		clear: both;
+		max-width: 100%;
+	}
 }

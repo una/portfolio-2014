@@ -127,3 +127,10 @@ $('.fannouts').waypoint(function() {
 $('.js-invert').waypoint(function() {
 	$(this).addClass('inverted');
 }, { offset: '50%' });
+
+
+//fades in on the ready
+$('.cs-main__content').hide();
+$(document).ready(function(){
+    $('.cs-main__content').fadeIn();
+});

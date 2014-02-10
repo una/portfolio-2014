@@ -1,24 +1,25 @@
-<div class="pagination {{ page.color }}">
-	<div class="contain-1100">
-		<div class="left"> 
-			{% if page.previous.url and page.previous.title != 'Style Guide' %} 
-				<a href="{{page.previous.url}}" title="Previous Post: 
-	{{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
-			{% else %}
-		<a href="/" title="Home">&laquo; Home</a>
-			{% endif %} 
-		</div> 
+	<div class="pagination {{ page.color }}">
+		<div class="contain-1100">
+			<div class="left"> 
+				{% if page.previous.url and page.previous.title != 'Style Guide' %} 
+					<a href="{{page.previous.url}}" title="Previous Post: 
+		{{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+				{% else %}
+			<a href="/" title="Home">&laquo; Home</a>
+				{% endif %} 
+			</div> 
 
-		<div class="right"> 
-			{% if page.next.url and page.next.title != 'Style Guide' %}
-				<a href="{{page.next.url}}" title="next Post: 
-	{{page.next.title}}">{{page.next.title}} &raquo; </a>
-			{% else %}
-				<a href="/" title="Home">Home &raquo; </a>
-			{% endif %} 
+			<div class="right"> 
+				{% if page.next.url and page.next.title != 'Style Guide' %}
+					<a href="{{page.next.url}}" title="next Post: 
+		{{page.next.title}}">{{page.next.title}} &raquo; </a>
+				{% else %}
+					<a href="/" title="Home">Home &raquo; </a>
+				{% endif %} 
+			</div>
 		</div>
 	</div>
-</div>
+</div> <!-- closes the cs main content -->
 
 <footer role="contentinfo">
 	<p>&copy; Una Kravets 2014. Made with &hearts; in Jekyll. View the <a href="/styleguide">styleguide</a>, or the <a href="http://github.com/una/portfolio-2014" target="_blank">source code</a>.</p>

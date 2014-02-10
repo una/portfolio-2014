@@ -69,30 +69,33 @@
 		</div>
 		<h1 class="cs--inverted">A Drink Mixing Web App</h1>
 	</div>
+	<div class="cs-main__content">
 
 
 		<section class="contain-1100">
 			 <script src="../js/vendor/highlight.pack.js"></script>
 <script>
 	$(document).ready(function() {
-		$('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+		$('pre code').each(function(i, e) {hljs.highlightBlock(e)}).css('overflow', 'scroll');
 	});
 </script>
 <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/zenburn.min.css">
 
-<h2>When You Can Make Anything</h2>
+<img src="../images/proofessor/planning.jpg" alt="intern planning" class="half-r">
+
+<h2>When You Tell College Kids to Make "Anything"</h2>
 <h3>The Team:</h3>
-	<p>
-		<span>Jo-Yee Pang</span>: User Experience Design<br>
-		<span>Eli VanAlsburg</span>: Interface Design, Illustration<br>
-		<span>Erica Bond</span>: Project Management<br>
-	</p>
-<br>
+<p>
+	<span>Jo-Yee Pang</span>: User Experience Design<br>
+	<span>Eli VanAlsburg</span>: Interface Design, Illustration<br>
+	<span>Erica Bond</span>: Project Management<br>
+</p><br>
+<h3>How it Works:</h3>
+<p>Select what spirits, liquors, or mixers you have available and would like to use. Then, the available recipe list filters down to fit your selected parameters and you can click on different recipes to learn how to make them. If you're indecisive like me, you can simply shake your mobile device, and Proofessor will flip to a random recipe for you.</p>
 <blockquote class="push">We wanted to create <span>something we could use</span> &mdash; something tangible that we could share with others.</blockquote>
 
-<p>Proofessor is a simple drink mixing app where you control the inputs</p>
-
 <h2>Building with Craft</h2>
+<p>Craft is a beautiful, beautiful custom CMS.</p>
 
 <h2>It's the Little Things</h2>
 
@@ -100,8 +103,13 @@
 
 <img src="../images/proofessor/bottle-drain.gif" alt="drinks" class="center">
 
+<video width="320" height="568" autoplay loop>
+	<source src="../images/proofessor/phone-shake.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
 <h2>JS Intensive</h2>
-<pre><code>
+<pre class="half-l"><code>
 	window.PROOF || (PROOF = {}); //define a namespace (only ONCE) -- I used PROOF for Proofessor
 	(function($, window, document, undefined) {
 	  var _common = PROOF.common = { //this is your js object
@@ -122,7 +130,7 @@
 </code></pre>
 
 <h2>Defending Simplicity</h2>
-<blockquote class="center push">As a front end developers, we often want to say "yes" to everything, but knowing when a task is too expensive &mdash; saying 'no' &mdash; is an important skill to have.</blockquote>
+<blockquote class="center push">As a front end developers, we often want to say "yes" to everything, but knowing when a task is too expensive (<span>saying 'no'</span>) is an important skill to have.</blockquote>
 
 <h2>A Team Effort</h2>
 
@@ -130,22 +138,23 @@
 <iframe src="http://proofessor.co/" height="568px" width="320px" frameborder="0"></iframe>
 		</section>
 	</main>
-<div class="pagination gold">
-	<div class="contain-1100">
-		<div class="left"> 
-			
-		<a href="/" title="Home">&laquo; Home</a>
-			 
-		</div> 
+	<div class="pagination gold">
+		<div class="contain-1100">
+			<div class="left"> 
+				
+			<a href="/" title="Home">&laquo; Home</a>
+				 
+			</div> 
 
-		<div class="right"> 
-			
-				<a href="/edible" title="next Post: 
-	Edible Rebrand">Edible Rebrand &raquo; </a>
-			 
+			<div class="right"> 
+				
+					<a href="/edible" title="next Post: 
+		Edible Rebrand">Edible Rebrand &raquo; </a>
+				 
+			</div>
 		</div>
 	</div>
-</div>
+</div> <!-- closes the cs main content -->
 
 <footer role="contentinfo">
 	<p>&copy; Una Kravets 2014. Made with &hearts; in Jekyll. View the <a href="/styleguide">styleguide</a>, or the <a href="http://github.com/una/portfolio-2014" target="_blank">source code</a>.</p>
