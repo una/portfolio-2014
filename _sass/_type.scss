@@ -129,6 +129,11 @@
 	@include color-specific(cornflowerblue);
 }
 
+%pink,
+.pink {
+	@include color-specific(hotpink);
+}
+
 body {
 	@extend %font-copy;
 	font-size: 16px;
