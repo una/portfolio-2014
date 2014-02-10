@@ -5,3 +5,4 @@ serve/
 server/
 _site/serve/
 _site/server/
+_site/.DS_Store
