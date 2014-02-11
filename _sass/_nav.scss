@@ -1,10 +1,7 @@
 .menu-section {
-	@include transition-duration(0.8s);
-	height: 75px;
-	position: absolute;
-	top: 0;
+	@include transition-duration(0.5s);
 	width: 100%;
-	z-index: 10;
+	z-index: 100;
 
 	
 	&.on {

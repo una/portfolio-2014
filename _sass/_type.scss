@@ -62,7 +62,7 @@
 		border-bottom: 1px solid $var-name;
 		
 		&:hover {
-			color: white;
+			@extend %white;
 			background-color: $var-name;
 		}
 
@@ -79,11 +79,6 @@
 	li {
 		color: $color--copy;
 	}
-	
-	.inverted {
-		background-color: $var-name;
-		@extend %white;
-	}
 
 	p {
 		color: $color--grey;
@@ -93,8 +88,18 @@
 		border-bottom: 1px solid $var-name;
 	}
 
-	blockquote span {
-		color: $var-name;
+	.hljs span {
+		border-bottom: none;
+	}
+
+	blockquote {
+		&:not(.inverted) span {
+			color: $var-name;
+		}
+		
+		&.inverted span {
+			color: $color--copy;
+		}
 	}
 
 	.bullets li:before {
@@ -106,6 +111,11 @@
 		&.active {
 			background-color: $var-name;
 		}
+	}
+
+	.inverted {
+		background-color: $var-name;
+		@extend %white;
 	}
 }
 
@@ -289,6 +299,6 @@ small {
 
 code,
 pre {
-	overflow: scroll;
+	overflow: auto;
 	max-width: 100%;
 }

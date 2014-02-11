@@ -99,45 +99,6 @@
 <img src="../images/proofessor/wires.jpg" alt="Wireframes">
 <img src="../images/proofessor/me-working.jpg" alt="Me Working">
 
-<h2>It's the Little Things</h2>
-<p>I am definitely a strong believer that the nuances of a project are what make it. I made sure to include touches (in the form of CSS animations) to just add that little bit of sparkle. The logo moustache wiggles a little on hover, and the _____. 
-
-<br><br>
-But not all of the animations planned actually made it into the production code. Originally I worked on a function to make the recipe count tally up and down --------- and the bottle drain --------- saying no section ------------ </p>
-
-<img src="../images/proofessor/logo-shake.gif" alt="proofessor logo" class="center">
-
-<img src="../images/proofessor/bottle-drain.gif" alt="drinks" class="center">
-
-<video width="320" height="568" autoplay loop>
-	<source src="../images/proofessor/phone-shake.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-
-<h2>JS Intensive</h2>
-<pre class="half-l"><code>
-	window.PROOF || (PROOF = {}); //define a namespace (only ONCE) -- I used PROOF for Proofessor
-	(function($, window, document, undefined) {
-	  var _common = PROOF.common = { //this is your js object
-	    init: function() {
-	    this.setVars();
-	    this.bindEvents();
-	  },
-	  setVars: function() {
-	    // set all variables here
-	    this.helloString = "hello" ; // also _common.helloString
-	  },
-	  bindEvents: function() {
-	    // set event listeners for your functions here
-	  },
-	  // the rest of your functions go here
-	  _common.init(); // don't forget to init!
-	})(jQuery, window, document);
-</code></pre>
-
-<h2>Defending Simplicity</h2>
-<blockquote class="center push">As a front end developers, we often want to say "yes" to everything, but knowing when a task is too expensive (<span>saying 'no'</span>) is an important skill to have.</blockquote>
-
 <h2 class="center">Building with Craft</h2>
 	<p class="center">Craft is a beautiful, brand new custom content management system, created by Expression Engine developers <span>Pixel and Tonic</span>. Version 1 was released just a few weeks before Proofessor was conceptualized. It lets you create completely customized fields, pages, and forms for clients to have a visual back-end to update their website through, while using <span>Twig</span> as a templating engine to access this data.
 	<br><br>
@@ -148,14 +109,66 @@ Your browser does not support the video tag.
 	<img src="../images/proofessor/craft-2.png" alt="Craft CMS" class="half-r">
 </div>
 
-<h2>A Team Effort</h2>
+<img src="../images/proofessor/logo-shake.gif" alt="proofessor logo" class="center">
 
+<div class="row">
+<img src="../images/proofessor/bottle-drain.gif" alt="drinks" class="right">
+<h2>It's the Little Things</h2>
+<p>I am definitely a strong believer that the nuances of a project are what make it. I made sure to include touches (in the form of CSS animations) to just add that little bit of sparkle. The logo mustache wiggles a little on hover, and the bottles flip and gray out when selected (they flip back when "reset"). 
+
+<br><br>
+But not all of the animations planned actually made it into the production code. Originally I worked on a function to make the recipe count tally up and down upon changes, and the bottles to drain when selected, however I learned to let go of these fun quirks. I was taught to be a <span>defender of simplicity</span> and understand when to say no.</p>
+
+<blockquote class="center push js-invert">As a front end developers, we often want to say "yes" to everything, but knowing when a task is too expensive <span>(when to say 'no')</span> is an important skill to have.</blockquote>
+</div>
+
+
+
+<div class="row">
+<!-- 	<video class="left" width="320" height="568" autoplay loop>
+		<source src="../images/proofessor/phone-shake.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video> -->
+	<img src="../images/proofessor/proofshake1.gif" alt="Phone Shaking" class="half left">
+	<h2>The Proofessor Playground</h2>
+	<p class="clear-max">
+		I learned SO much about Javascript code from this project, and really had a chance to "play around" with different functions. The code was re-factored over and over, but turned out to be something I was very proud of: clean, object-oriented, and name spaced. I organized it mostly based on this model:
+	</p>
+<br>
+<br>
+
+<pre><code>window.PROOF || (PROOF = {}); //define a namespace (only ONCE) -- I used PROOF for Proofessor
+(function($, window, document, undefined) {
+  var _common = PROOF.common = { //this is your js object
+    init: function() {
+    this.setVars();
+    this.bindEvents();
+  },
+  setVars: function() {
+    // set all variables here
+    this.helloString = "hello" ; // also _common.helloString
+  },
+  bindEvents: function() {
+    // set event listeners for your functions here
+  },
+  // the rest of your functions go here
+  _common.init(); // don't forget to init!
+})(jQuery, window, document);
+</code></pre>
+
+</div>
+<br><br>
+
+<blockquote class="gold">
+	Collaboration was key. There was a lot of talk between teams, and a lot of co-working that brought Proofessor to life.
+</blockquote>
 <img src="../images/proofessor/fed-des.jpg" alt="FED + Des Room">
 <img src="../images/proofessor/all-diffpages.jpg" alt="Proofessor">
 <img src="../images/proofessor/all-scattered.jpg" alt="Proofessor">
 
-<h2>Go Ahead, Try it Yourself</h2>
-<iframe src="http://proofessor.co/" height="568px" width="320px" frameborder="0"></iframe>
+<h2 class="center">Go Ahead, Try it Yourself:</h2>
+<iframe class="center push" src="http://proofessor.co/" height="568px" width="320px" style="display: block" frameborder="0"></iframe>
+
 		</section>
 	</main>
 	<div class="pagination gold">
@@ -168,8 +181,8 @@ Your browser does not support the video tag.
 
 			<div class="right"> 
 				
-					<a href="/edible" title="next Post: 
-		Edible Rebrand">Edible Rebrand &raquo; </a>
+					<a href="/sltm" title="next Post: 
+		Sleep Less & Travel More">Sleep Less & Travel More &raquo; </a>
 				 
 			</div>
 		</div>
@@ -178,7 +191,6 @@ Your browser does not support the video tag.
 
 <footer role="contentinfo">
 	<p>&copy; Una Kravets 2014. Made with &hearts; in Jekyll. View the <a href="/styleguide">styleguide</a>, or the <a href="http://github.com/una/portfolio-2014" target="_blank">source code</a>.</p>
-	<p>If you want to contact me, email una@ukrave.us. It's as simple as that. If you're nice, I promise to respond :)</p>
 </footer>
 
 </body>

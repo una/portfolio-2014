@@ -3,9 +3,6 @@ description: "The online portflio of Una Kravets, front end developer and graphi
 
 url: "unakravets.com"
 
-markdown: rdiscount
-rdiscount extensions: [smart]
-
 permalink: pretty
 pygments: true
 

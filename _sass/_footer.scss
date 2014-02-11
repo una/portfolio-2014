@@ -1,6 +1,25 @@
 footer {
 	p {
 		@extend %white;
+
+		@include fontsize(12);
+		line-height: 1.4;
+		color: white;
+		margin-top: -1em;
+		max-width: 800px;
+		margin: 0 auto;
+
+		@include breakpoint($phone-horiz) {
+			@include fontsize(10)
+		}
+
+		a {
+			color: hotpink;
+			&:hover {
+				background: hotpink;
+				color: white;
+			}
+		}
 	}
 	height: 400px;
 }
