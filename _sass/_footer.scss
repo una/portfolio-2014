@@ -1,13 +1,12 @@
 footer {
 	p {
 		@extend %white;
-
 		@include fontsize(12);
 		line-height: 1.4;
 		color: white;
-		margin-top: -1em;
-		max-width: 800px;
 		margin: 0 auto;
+		padding: 4em 2em;
+		text-align: center;
 
 		@include breakpoint($phone-horiz) {
 			@include fontsize(10)
@@ -27,5 +26,4 @@ footer {
 
 .footer--solid {
 	background-color: $color--grey;
-	padding: 3em;
 }
