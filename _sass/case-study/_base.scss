@@ -202,10 +202,31 @@
 }
 
 .max-60 {
-	max-width: 60%;
+	width: 60%;
 	
 	@include breakpoint($small-tab){
 		clear: both;
+		width: auto;
 		max-width: 100%;
 	}
 }
+
+.max-40 {
+	width: 40%;
+	
+	@include breakpoint($small-tab){
+		clear: both;
+		width: auto;
+		max-width: 100%;
+	}
+}
+
+.max-half {
+		width: 51%;
+		
+		@include breakpoint($small-tab){
+			clear: both;
+			width: auto;
+			max-width: 100%;
+		}
+	}
