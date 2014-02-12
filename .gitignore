@@ -3,6 +3,8 @@
 images/
 serve/
 server/
+build/
 _site/serve/
 _site/server/
 _site/.DS_Store
+_site/build/
