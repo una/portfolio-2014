@@ -1,9 +1,3 @@
-name: "Una Kravets' Portfolio"
-description: "The online portflio of Una Kravets, front end developer and graphic designer based in Washington, DC."
-
-url: "unakravets.com"
-
-permalink: pretty
+name: Your New Jekyll Site
+markdown: redcarpet
 pygments: true
-
-auto: true

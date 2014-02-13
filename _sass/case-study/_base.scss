@@ -124,6 +124,9 @@
 
 
 .bullets {
+	@include fontsize(12);
+	margin: 1em 0;
+
 	li {
 		margin-left: 1em;
 		line-height: 1.5;
@@ -132,8 +135,10 @@
 	li:before {
 		content: "• ";
 	}
-
-	margin: 1em 0;
+	
+	@include breakpoint($phone-horiz) {
+		@include fontsize(10);
+	}
 }
 
 .cs--top-image {
@@ -222,11 +227,15 @@
 }
 
 .max-half {
-		width: 51%;
-		
-		@include breakpoint($small-tab){
-			clear: both;
-			width: auto;
-			max-width: 100%;
-		}
+	width: 51%;
+	
+	@include breakpoint($small-tab){
+		clear: both;
+		width: auto;
+		max-width: 100%;
 	}
+}
+
+.cs--inverted {
+	margin-bottom: 2em;
+}
