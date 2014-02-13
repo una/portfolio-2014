@@ -33,15 +33,14 @@ image-top: "../images/edible-rebrand/logo--fullcolor.svg"
 <!-- <img class="half right" src="../images/edible-rebrand/light-table.jpg" alt="Light Table"> -->
 <blockquote class="center push">“The details are not the details.  They make the design.” &mdash;Charles Eames</blockquote>
 <img src="../images/edible-rebrand/sketches-concat.jpg" alt="Sketches">
-<!-- <img class="half-r" src="../images/edible-rebrand/process2.png" alt="Process of Creating Vector">
-<img class="half-l" src="../images/edible-rebrand/process4.png" alt="Process of Creating Vector"> -->
 <img class="center" src="../images/edible-rebrand/process3.png" alt="Process of Creating Vector">
 
 <h2>The Final Logo</h2>
-<img class="half-l" src="../images/edible-rebrand/logo--fullcolor.svg" alt="Final Logo">
-<img class="half-r" src="../images/edible-rebrand/logo--fullcolor--reversed.svg" alt="Final Logo">
+<img class="third-piece" src="../images/edible-rebrand/logo--fullcolor.svg" alt="Final Logo">
+<img class="third-piece" src="../images/edible-rebrand/logo--fullcolor--reversed.svg" alt="Final Logo">
+<img class="third-piece last" src="../images/edible-rebrand/logo--2color.svg" alt="Two Color Logo">
 
-<img src="../images/edible-rebrand/logo_measure--detail.svg" alt="Logo with Measurements">
+<img class="center" src="../images/edible-rebrand/logo_measure--detail.svg" alt="Logo with Measurements">
 
 <h2 class="center">Enforcing Unity</h2>
 <p>Write things</p>
@@ -68,6 +67,45 @@ image-top: "../images/edible-rebrand/logo--fullcolor.svg"
 <img src="../images/edible-rebrand/bags.jpg" alt="Bag Mockups">
 <img src="../images/edible-rebrand/box.jpg" alt="Box Mockups">
 
--- the booklet here --
+<div class="magnify">
+	<div class="large"></div>
+	<img class="small" src="../images/edible-rebrand/concat-full-withbg.png" width="100%"/>
+</div>
 
-<img src="../images/edible-rebrand/concat-full-withbg.png" alt="All Stationery">
+<!-- Magnify -->
+<script type="text/javascript">
+$(document).ready(function(){
+	var native_width = 0;
+	var native_height = 0;
+	$(".magnify").mousemove(function(e){
+		if(!native_width && !native_height)
+		{
+
+			var image_object = new Image();
+			image_object.src = $(".small").attr("src");
+			
+			native_width = image_object.width;
+			native_height = image_object.height;
+		}
+		else
+		{
+			var magnify_offset = $(this).offset();
+			var mx = e.pageX - magnify_offset.left;
+			var my = e.pageY - magnify_offset.top;		
+			if(mx < $(this).width() && my < $(this).height() && mx > 0 && my > 0)
+			{$(".large").fadeIn(100);}
+			else
+			{$(".large").fadeOut(100);}
+			if($(".large").is(":visible"))
+			{
+				var rx = Math.round(mx/$(".small").width()*native_width - $(".large").width()/2)*-1;
+				var ry = Math.round(my/$(".small").height()*native_height - $(".large").height()/2)*-1;
+				var bgp = rx + "px " + ry + "px";
+				var px = mx - $(".large").width()/2;
+				var py = my - $(".large").height()/2;
+				$(".large").css({left: px, top: py, backgroundPosition: bgp});
+			}
+		}
+	})
+})
+</script>

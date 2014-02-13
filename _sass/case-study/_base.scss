@@ -226,6 +226,22 @@
 	}
 }
 
+.third-piece {
+	width: 31%;
+	float: left;
+	margin-right: 2%;
+	
+	&.last {
+		margin-right: 0;
+	}
+	
+	@include breakpoint($small-tab){
+		clear: both;
+		width: auto;
+		max-width: 100%;
+	}
+}
+
 .max-half {
 	width: 51%;
 	
