@@ -239,3 +239,19 @@
 .cs--inverted {
 	margin-bottom: 2em;
 }
+
+.hljs {
+	font-family: 'Courier New', 'Courier' monotype;
+	padding: 1em 0 2em;
+	
+	span {
+		border-bottom: none;
+		padding-bottom: 1em;
+	}
+}
+
+code,
+pre {
+	overflow: auto;
+	max-width: 100%;
+}
