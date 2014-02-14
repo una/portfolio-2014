@@ -216,6 +216,16 @@
 	}
 }
 
+.max-70 {
+	width: 70%;
+	
+	@include breakpoint($small-tab){
+		clear: both;
+		width: auto;
+		max-width: 100%;
+	}
+}
+
 .max-40 {
 	width: 40%;
 	
@@ -270,4 +280,12 @@ code,
 pre {
 	overflow: auto;
 	max-width: 100%;
+}
+
+.push-top {
+	margin-top: 5em;
+}
+
+.push-bottom {
+	margin-bottom: 5em;
 }
