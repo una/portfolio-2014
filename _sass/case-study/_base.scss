@@ -122,9 +122,16 @@
 	}
 }
 
+ul,
+ol {
+	@include fontsize(12);
+
+	@include breakpoint($phone-horiz) {
+		@include fontsize(10);
+	}
+}
 
 .bullets {
-	@include fontsize(12);
 	margin: 1em 0;
 
 	li {
@@ -134,10 +141,6 @@
 
 	li:before {
 		content: "• ";
-	}
-	
-	@include breakpoint($phone-horiz) {
-		@include fontsize(10);
 	}
 }
 
@@ -288,4 +291,10 @@ pre {
 
 .push-bottom {
 	margin-bottom: 5em;
+}
+
+p.caption {
+	text-align: center;
+	font-style: italic;
+	margin: 0.5em auto;
 }
