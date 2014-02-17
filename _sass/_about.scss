@@ -1,13 +1,37 @@
 .about--main {
 	max-width: 80%;
 	margin: 50px 0 -5px -10%;
+	
 }
 
 .about--info {
 	display: block;
-	max-width: 800px;
+	max-width: 500px;
 	float: right;
 	margin-top: -50%;
 	z-index: 2;
 	position: relative;
+	
+	h2 {
+		margin-left: 0;
+	}
+
+	p {
+		@include breakpoint($phone-horiz) {
+			@include fontsize(12);
+		}
+	}
+
+	a {
+		color: hotpink;
+		&:hover {
+			background: hotpink;
+			color: white;
+		}
+	}
+
+	span {
+		text-transform: uppercase;
+		font-weight: 800;
+	}
 }
