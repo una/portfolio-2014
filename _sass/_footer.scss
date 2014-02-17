@@ -7,7 +7,7 @@ footer {
 		@include fontsize(12);
 		line-height: 1.4;
 		color: white;
-		margin: 3rem auto;
+		margin: 3rem auto 0;
 		text-align: center;
 
 		@include breakpoint($phone-horiz) {
