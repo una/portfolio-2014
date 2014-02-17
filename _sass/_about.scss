@@ -17,8 +17,10 @@
 	}
 
 	p {
+		@include fontsize(12);
+		
 		@include breakpoint($phone-horiz) {
-			@include fontsize(12);
+			@include fontsize(10);
 		}
 	}
 
