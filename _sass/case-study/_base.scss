@@ -294,7 +294,7 @@ pre {
 }
 
 p.caption {
+	@extend %italic;
 	text-align: center;
-	font-style: italic;
 	margin: 0.5em auto;
 }

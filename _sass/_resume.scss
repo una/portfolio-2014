@@ -1,5 +1,32 @@
 .resume {
+	display: block;
+	overflow: hidden;
 	h3 {
 		color: hotpink;
+		line-height: 1.2;
+		@include fontsize(12)
+	}
+	ul {
+		//max-width: 50%;
+		//padding-right: 2%;
+		
+		&.right {
+			padding-right: none;
+		}
+	}
+
+	li {
+		margin-top: 1em;
+	}
+
+	.resume-l {
+		max-width: 60%;
+		float: left;
+		padding-right: 4%;
+	}
+
+	.resume-r {
+		max-width: 40%;
+		float: left;
 	}
 }

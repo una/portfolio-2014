@@ -421,7 +421,12 @@ h3 {
 }
 
 small {
-	font-size: 60%;
+	font-size: 70%;
 	color: $color--copy;
 	@extend %font-copy; 
+}
+
+.italic,
+%italic {
+	font-style: italic;
 }
