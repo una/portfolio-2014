@@ -1,11 +1,13 @@
 footer {
+
+	padding: 6rem 1rem;
+
 	p {
 		@extend %white;
 		@include fontsize(12);
 		line-height: 1.4;
 		color: white;
-		margin: 0 auto;
-		padding: 4em 2em;
+		margin: 3rem auto;
 		text-align: center;
 
 		@include breakpoint($phone-horiz) {
@@ -20,10 +22,62 @@ footer {
 			}
 		}
 	}
-	height: 400px;
 }
 
 
 .footer--solid {
 	background-color: $color--grey;
+}
+
+.social-icons {
+	li {
+		display: inline-block;
+		a {
+			@include fontsize(26);
+			text-decoration: none;
+			color: white;
+			
+			&.icon-twitter:hover {
+				color: #55acee;
+			}
+
+			&.icon-dribbble:hover {
+				color: #ea4c89
+			}
+
+			&.icon-paragraph-left:hover {
+				color: #0ba6ab;
+			}
+
+			&.icon-pencil:hover {
+				color: #f86960;
+			}
+
+			&.icon-codepen:hover {
+				color: #666666;
+			}
+
+			&.icon-github2:hover {
+				color: #76cc1e;
+			}
+
+			&.icon-vimeo:hover {
+				color: #44bbff;
+			}
+
+			&.icon-linkedin:hover {
+				color: #0e76a8;
+			}
+
+			@include breakpoint($small-tab) {
+				@include fontsize(18);
+				display: block;
+				margin: 0.2em; 
+			}
+
+			@include breakpoint($phone-horiz) {
+				margin: 0.4em;
+			}
+		}
+	}
 }
