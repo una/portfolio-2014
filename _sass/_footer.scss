@@ -79,6 +79,11 @@ footer {
 			@include breakpoint($phone-horiz) {
 				margin: 0.4em;
 			}
+
+			.tooltip {
+				@include fontsize(12);
+				margin-left: 100%;
+			}
 		}
 	}
 }

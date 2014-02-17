@@ -110,48 +110,45 @@ p {
 
 //fix later
 .has-tooltip {
-    position: relative;
-    -webkit-transform: translateZ(0); /* webkit flicker fix */
-}
+	position: relative;
 
-.has-tooltip .tooltip {
-    background: hotpink;
-    bottom: 100%;
-    color: #fff;
-    display: block;
-    left: -50px;
-    margin-bottom: 15px;
-    opacity: 0;
-    padding: 20px;
-    position: absolute;
-    visibility: hidden;
-    @include transform(translateY(10px));
-    @include transition(all .25s ease-out);
-}
+	 .tooltip {
+	background: hotpink;
+	bottom: 100%;
+	color: #fff;
+	display: block;
+	left: -50%;
+	margin-bottom: 15px;
+	opacity: 0;
+	padding: 20px;
+	position: absolute;
+	visibility: hidden;
+	@include transform(translateY(10px));
+	@include transition(all .25s ease-out);
 
-/* This bridges the gap so you can mouse into the tooltip without it disappearing */
-.has-tooltip .tooltip:before {
-    bottom: -20px;
-    content: "";
-    display: block;
-    height: 20px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-}  
+		&:before {
+		bottom: -20px;
+		content: "";
+		display: block;
+		height: 20px;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		}  
 
-/* CSS Triangles - see Trevor's post */
-.has-tooltip .tooltip:after {
-    border-left: solid transparent 10px;
-    border-right: solid transparent 10px;
-    border-top: solid hotpink 10px;
-    bottom: -10px;
-    content: " ";
-    height: 0;
-    left: 50%;
-    margin-left: -13px;
-    position: absolute;
-    width: 0;
+		&:after {
+		border-left: solid transparent 10px;
+		border-right: solid transparent 10px;
+		border-top: solid hotpink 10px;
+		bottom: -10px;
+		content: " ";
+		height: 0;
+		left: 50%;
+		margin-left: -13px;
+		position: absolute;
+		width: 0;
+		}
+	}
 }
   
 .has-tooltip:hover .tooltip {
