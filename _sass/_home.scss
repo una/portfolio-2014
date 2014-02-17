@@ -59,7 +59,6 @@
 	p {
 		@extend %white;
 		@include fontsize(16);
-		line-height: 1.4;
 		color: white;
 		margin-top: -1em;
 		max-width: 350px;
