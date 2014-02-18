@@ -5,8 +5,10 @@
 	line-height: 1.6;
 	
 	h2 {
-		@include fontsize(18);
-		color: cornflowerblue;
+		@include fontsize(22);
+		color: white;
+		background: cornflowerblue;
+		padding: 0 0.5em;
 	}
 	a {
 		color: cornflowerblue;
@@ -41,5 +43,9 @@
 	.resume-r {
 		max-width: 40%;
 		float: left;
+	}
+
+	.half {
+		padding: 2em;
 	}
 }
