@@ -30,6 +30,7 @@
 
 .cs--bar {
 	display: block;
+	background-color: white; 
 }
 
 .cs--list a {
@@ -38,8 +39,10 @@
 
 .home-about {
 	display: block;
-	background-color: $color--grey;
 	padding: 0 1em 2em;
+	// background: url("http://25.media.tumblr.com/09d144943802daad98c4556e0961eb66/tumblr_mzzqxabKjH1st5lhmo1_1280.jpg");
+	// @include background-size (100%);
+	// background-attachment: fixed;
 }
 
 .about-me {

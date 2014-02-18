@@ -1,6 +1,7 @@
 ---
 layout: layout
 title: Una Kravets' Portfolio
+image-bg: http://25.media.tumblr.com/09d144943802daad98c4556e0961eb66/tumblr_mzzqxabKjH1st5lhmo1_1280.jpg
 ---
 
 <header role="banner" class="home-about">
@@ -12,6 +13,10 @@ title: Una Kravets' Portfolio
 
 <main role="main">
 		{{ content }}
+		<div class="cs__intro-bg">
+			<img src="{{ page.image-bg }}" alt="{{ page.title }} background">
+			<div class="shader"></div>
+		</div>
 		<ul class="cs--list">
 		{% for post in site.posts reversed %}
 			{% if post.title != 'Style Guide' %}
