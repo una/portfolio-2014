@@ -70,6 +70,10 @@ footer {
 				color: #0e76a8;
 			}
 
+			&.icon-mail2:hover {
+				color: gold;
+			}
+
 			@include breakpoint($small-tab) {
 				@include fontsize(18);
 				display: block;

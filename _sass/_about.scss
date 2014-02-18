@@ -2,29 +2,49 @@
 	max-width: 80%;
 	margin: 50px 0 -3px -10%;
 	
+	@include breakpoint(max-width 46.5em) {
+		margin: 20px 0 -3px 8%;
+	}
 }
 
 .about-page {
-	background-color: white; 
+	background-color: white;
+	overflow: hidden;
 }
 
 .about--info {
 	display: block;
 	max-width: 500px;
-	float: right;
-	margin-top: -50%;
 	z-index: 2;
-	position: relative;
+	position: absolute;
+	left: 54%;
+	top: 5em;
+	
+	@include breakpoint(max-width 46.5em) {
+		left: 0;
+		padding: 1em;
+		max-width: 100%;
+		position: relative;
+	}
+	
+	@include breakpoint($tab-horiz) {
+		top: 3em;
+	}
 	
 	h2 {
 		margin-left: 0;
+		
+		@include breakpoint($tab-horiz) {
+			@include fontsize(28)
+		}
 	}
 
 	p {
 		@include fontsize(12);
+		margin-left: 0;
 		
-		@include breakpoint($phone-horiz) {
-			@include fontsize(10);
+		@include breakpoint($layout-break) {
+			@include fontsize(10)
 		}
 	}
 
@@ -33,6 +53,17 @@
 		&:hover {
 			background: hotpink;
 			color: white;
+		}
+
+		&.pull-link {
+			background: hotpink;
+			color: white;
+			@include fontsize(12);
+			
+			&:hover {
+				background: white;
+				color: hotpink;
+			}
 		}
 	}
 
