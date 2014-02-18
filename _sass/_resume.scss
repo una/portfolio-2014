@@ -11,28 +11,32 @@
 		background: cornflowerblue;
 		padding: 0 0.5em;
 		margin: 1.5em 0 0.5em;
+		font-weight: 800;
 
 	}
 
 	.bold {
 		font-weight: 800;
 	}
-	
+
 	a {
-		color: cornflowerblue;
+		color: hotpink;
+		&:hover {
+			background: hotpink;
+			color: white;
+		}
 	}
+	
 	h3 {
 		color: cornflowerblue;
 		line-height: 1.2;
 		@include fontsize(16);
 		font-weight: 400;
-		margin-left: -5%;
+		//margin-left: -5%;
 		margin-top: 1.5em;
 	}
 	ul {
-		//max-width: 50%;
-		//padding-right: 2%;
-		
+
 		&.right {
 			padding-right: none;
 		}
@@ -41,7 +45,7 @@
 	li {
 		@include fontsize(10);
 		margin-top: 1em;
-		margin-left: 5%;
+		//margin-left: 5%;
 	}
 
 	.resume-l {
@@ -55,7 +59,7 @@
 		float: left;
 	}
 
-	.half {
-		padding: 2em;
-	}
+	// .half {
+	// 	//padding: 2em;
+	// }
 }
