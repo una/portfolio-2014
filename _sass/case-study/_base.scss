@@ -298,3 +298,27 @@ p.caption {
 	text-align: center;
 	margin: 0.5em auto;
 }
+
+.pagination-arrows {
+	a{
+		display: block;
+		position: fixed;
+		padding: 0.5em;
+		@include fontsize(16);
+		top: 50%;
+		background: rgba(105,105,105,0.9);
+		color: white;
+		text-decoration: none;
+		
+		&:hover {
+			background-color: white;
+			color: dimgrey;
+		}
+	}
+	.icon-arrow-left {
+		left: 0;
+	}
+	.icon-arrow-right {
+		right: 0;
+	}
+}

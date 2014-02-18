@@ -180,6 +180,11 @@
 	font-weight: 900; 
 }
 
+%font-title-sm {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: 800; 
+}
+
 %font-blockquote {
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: 400; 
@@ -306,9 +311,12 @@ body {
 	@extend %font-title--amp;
 }
 
+.chrome h3 {
+	font-weight: 800;
+}
+
 h1,
-h2,
-h3 {
+h2 {
 	@extend %font-title;
 }
 
@@ -405,7 +413,9 @@ p {
 }
 
 h3 {
+	@extend %font-title-sm;
 	@include fontsize(16);
+	font-weight: 800;
 	line-height: 2;
 	color: white;
 	z-index: 2;
