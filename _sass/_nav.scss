@@ -21,6 +21,7 @@
 	top: 20px;
 	right: 25px;
 	cursor: pointer;
+	z-index: 100;
 	
 	&.on {
 		.toggle--1 {
@@ -87,8 +88,10 @@ nav ul{
 }
 
 .headroom--pinned {
-	position: fixed; //**this is causing error!!
+	position: fixed;
 	top: 0;
+	z-index: 100;
+	
 	&.homepage {
 		.toggle--1,
 		.toggle--2,

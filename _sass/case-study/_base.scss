@@ -5,7 +5,7 @@
 }
 
 .cs__intro-section {
-	height: 600px;
+	margin-bottom: 300px;
 	width: 100%;
 	
 	h1 {
@@ -145,7 +145,7 @@ ol {
 }
 
 .cs--top-image {
-	margin-top: -400px;
+	margin-top: -300px;
 	max-width: 90%;
 }
 
@@ -310,6 +310,10 @@ p.caption {
 		color: white;
 		text-decoration: none;
 		
+		@include breakpoint($phone-horiz) {
+			@include fontsize(12);
+		}
+		
 		&:hover {
 			background-color: white;
 			color: dimgrey;
@@ -321,4 +325,8 @@ p.caption {
 	.icon-arrow-right {
 		right: 0;
 	}
+}
+
+.rotate-r {
+	@include rotate(90deg);
 }

@@ -3,8 +3,11 @@
 	<ul>
 		<li><a class="icon-arrow-left" href="{{page.previous.url}}" title="Previous Post: 
 		{{page.previous.title}}"></a></li>
-		<li><a class="icon-arrow-right" href="{{page.next.url}}" title="Next Post: 
+		<li>
+		{% if page.next.title != 'Style Guide' %}
+		<a class="icon-arrow-right" href="{{page.next.url}}" title="Next Post: 
 		{{page.next.title}}"></a></li>
+		{% endif %}
 	</ul>
 </div>
 	<div class="pagination {{ page.color }}">
