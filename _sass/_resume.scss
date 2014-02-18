@@ -10,6 +10,17 @@
 		color: hotpink;
 		margin-top: 0.5em;
 		@include fontsize(60);
+		
+		@include breakpoint($tab-vert) {
+			@include fontsize(40);
+			padding: 0 5%;
+			margin-bottom: 0.5em;
+		}
+
+		@include breakpoint($phone-horiz) {
+			@include fontsize(30);
+			line-height: 1;
+		}
 	}
 	
 	h2:not(.subtitle) {
@@ -37,6 +48,16 @@
 			font-size: 90%; 
 			color: hotpink;
 			margin-left: 2em;
+		}
+
+		@include breakpoint($tab-vert) {
+			padding: 0 5%;
+			@include fontsize(14);
+			margin: -0.5em;
+		}
+
+		@include breakpoint($phone-horiz) {
+			@include fontsize(10);
 		}
 	}
 
