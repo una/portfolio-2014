@@ -1,10 +1,16 @@
 .resume {
 	display: block;
 	overflow: hidden;
-	color: $color--copy;
+	color: lightgrey;
 	line-height: 1.6;
 	margin-bottom: 4em;
 	@include fontsize(10);
+	
+	h1 {
+		color: hotpink;
+		margin-top: 0.5em;
+		@include fontsize(60);
+	}
 	
 	h2 {
 		@include fontsize(22);
@@ -33,7 +39,7 @@
 	}
 
 	h3 {
-		color: $color--copy;
+		color: white;
 		line-height: 1.2;
 		@include fontsize(16);
 		font-weight: 400;
