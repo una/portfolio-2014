@@ -64,8 +64,6 @@
 		@include fontsize(16);
 		color: white;
 		margin-top: -1em;
-		max-width: 350px;
-		margin: 0 auto;
 
 		@include breakpoint($phone-horiz) {
 			@include fontsize(12)
