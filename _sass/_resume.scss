@@ -3,13 +3,21 @@
 	overflow: hidden;
 	color: $color--copy;
 	line-height: 1.6;
+	@include fontsize(10);
 	
 	h2 {
 		@include fontsize(22);
 		color: white;
 		background: cornflowerblue;
 		padding: 0 0.5em;
+		margin: 1.5em 0 0.5em;
+
 	}
+
+	.bold {
+		font-weight: 800;
+	}
+	
 	a {
 		color: cornflowerblue;
 	}
@@ -19,6 +27,7 @@
 		@include fontsize(16);
 		font-weight: 400;
 		margin-left: -5%;
+		margin-top: 1.5em;
 	}
 	ul {
 		//max-width: 50%;
@@ -30,6 +39,7 @@
 	}
 
 	li {
+		@include fontsize(10);
 		margin-top: 1em;
 		margin-left: 5%;
 	}
