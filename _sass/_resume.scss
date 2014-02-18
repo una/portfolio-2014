@@ -12,7 +12,7 @@
 		@include fontsize(60);
 	}
 	
-	h2 {
+	h2:not(.subtitle) {
 		@include fontsize(22);
 		color: white;
 		background: hotpink;
@@ -26,8 +26,29 @@
 		}
 	}
 
+	.subtitle {
+		font-weight: 400;
+		@include fontsize(16);
+		margin-top: -1em;
+		color: white;
+		
+		span {
+			margin-right: 0.5em;
+			font-size: 90%; 
+			color: hotpink;
+			margin-left: 2em;
+		}
+	}
+
 	.bold {
 		font-weight: 800;
+		display: inline; 
+		
+		@include breakpoint($phone-horiz) {
+			border-bottom: 1px solid hotpink;
+			display: block;
+			@include fontsize(14);
+		}
 	}
 
 	a {
@@ -44,9 +65,23 @@
 		@include fontsize(16);
 		font-weight: 400;
 		//margin-left: -5%;
-		margin-top: 1.5em;
+		margin: 1.5em 0 0.5em;
+
+
+		@include breakpoint($layout-break) {
+			@include fontsize(12);
+		}
+
+		@include breakpoint($tab-vert) {
+			@include fontsize(16);
+		}
+
 	}
 	ul {
+
+		@include breakpoint($page-container) {
+			padding: 0 1em;
+		}
 
 		&.right {
 			padding-right: none;
@@ -56,21 +91,46 @@
 	li {
 		@include fontsize(10);
 		margin-top: 1em;
-		//margin-left: 5%;
 	}
 
 	.resume-l {
 		max-width: 60%;
 		float: left;
 		padding-right: 15%;
+		
+		@include breakpoint($page-container) {
+			padding-right: 5%;
+		}
+
+		@include breakpoint($tab-vert) {
+			max-width: 100%;
+			padding: 0 10%;
+		}
+
+		@include breakpoint($small-tab) {
+			padding: 0 ;
+		}
 	}
 
 	.resume-r {
 		max-width: 40%;
 		float: left;
+		
+		@include breakpoint($tab-vert) {
+			max-width: 100%;
+			padding: 0 10%;
+		}
+
+		@include breakpoint($small-tab) {
+			padding: 0;
+		}
 	}
 
-	// .half {
-	// 	//padding: 2em;
-	// }
+	.subsection {
+		display: inline;
+		
+		@include breakpoint($page-container) {
+			display: block;
+		}
+	}
 }
