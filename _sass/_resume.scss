@@ -9,7 +9,7 @@
 	h2 {
 		@include fontsize(22);
 		color: white;
-		background: cornflowerblue;
+		background: hotpink;
 		padding: 0 0.5em;
 		margin: 1.5em 0 0.5em;
 		font-weight: 800;
@@ -33,7 +33,7 @@
 	}
 
 	h3 {
-		color: cornflowerblue;
+		color: $color--copy;
 		line-height: 1.2;
 		@include fontsize(16);
 		font-weight: 400;

@@ -81,8 +81,7 @@ footer {
 			}
 
 			.tooltip {
-				@include fontsize(12);
-				margin-left: 100%;
+				width: 120px;
 			}
 		}
 	}

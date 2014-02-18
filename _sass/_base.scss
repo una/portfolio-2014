@@ -113,24 +113,26 @@ p {
 	position: relative;
 
 	 .tooltip {
-	background: hotpink;
-	bottom: 100%;
-	color: #fff;
-	display: block;
-	left: -50%;
-	margin-bottom: 15px;
-	opacity: 0;
-	padding: 20px;
-	position: absolute;
-	visibility: hidden;
-	@include transform(translateY(10px));
-	@include transition(all .25s ease-out);
+	 	@extend %font-title;
+	 	@include fontsize(12);
+		background: hotpink;
+		bottom: 100%;
+		color: #fff;
+		display: block;
+		left: -50%;
+		margin-bottom: 15px;
+		opacity: 0;
+		padding: 0.5em;
+		position: absolute;
+		visibility: hidden;
+		@include transform(translateY(10px));
+		@include transition(all .25s ease-out);
 
 		&:before {
-		bottom: -20px;
+		bottom: -0.5em;
 		content: "";
 		display: block;
-		height: 20px;
+		height: 0.5em;
 		left: 0;
 		position: absolute;
 		width: 100%;
