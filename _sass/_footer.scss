@@ -2,6 +2,10 @@ footer {
 	position: relative;
 	z-index: 10; 
 	padding: 6rem 1rem;
+	
+	@include breakpoint($small-tab) {
+		padding: 3rem 1rem;
+	}
 
 	p {
 		@extend %white;
@@ -34,7 +38,7 @@ footer {
 	li {
 		display: inline-block;
 		a {
-			@include fontsize(26);
+			@include fontsize(24);
 			text-decoration: none;
 			color: white;
 			
@@ -75,14 +79,14 @@ footer {
 			}
 
 			@include breakpoint($small-tab) {
-				@include fontsize(18);
+				@include fontsize(20);
 				display: block;
-				margin: 0.2em; 
+				margin: 0.5em; 
 			}
 
-			@include breakpoint($phone-horiz) {
-				margin: 0.4em;
-			}
+			// @include breakpoint($phone-horiz) {
+			// 	margin: 0.4em;
+			// }
 
 			.tooltip {
 				width: 120px;
