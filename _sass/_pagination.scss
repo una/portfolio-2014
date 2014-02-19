@@ -12,3 +12,32 @@
 		border-bottom: none;
 	}
 }
+
+
+.pagination-arrows {
+	a{
+		display: block;
+		position: fixed;
+		padding: 0.5em;
+		@include fontsize(16);
+		top: 50%;
+		background: rgba(105,105,105,0.3);
+		color: white;
+		text-decoration: none;
+		
+		@include breakpoint($phone-horiz) {
+			@include fontsize(12);
+		}
+		
+		&:hover {
+			background-color: rgba(255,255,255,0.4);
+			color: dimgrey;
+		}
+	}
+	.icon-arrow-left {
+		left: 0;
+	}
+	.icon-arrow-right {
+		right: 0;
+	}
+}
