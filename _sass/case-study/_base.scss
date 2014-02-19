@@ -80,7 +80,7 @@
 				padding-left: 0;
 				padding-right: 0;
 				float: none;
-				margin: 0 auto;
+				margin: 1em auto 3em;
 			}
 		}
 
@@ -277,16 +277,12 @@ ol {
 .max-half {
 	width: 51%;
 	
-	@include breakpoint($small-tab){
+	@include breakpoint($layout-break){
 		clear: both;
 		width: auto;
-		max-width: 100%;
+		width: 100%;
 	}
 }
-
-// .cs--inverted {
-// 	margin-bottom: 2em;
-// }
 
 .hljs {
 	font-family: 'Courier New', 'Courier' monotype;
