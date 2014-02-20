@@ -10,4 +10,41 @@ image-index: "images/harry-potter/index.svg"
 image-bg: "../images/harry-potter/bg.jpg"
 ---
 
-harry potter hi
+<script>
+$(function(){
+	$(".slider").slidesjs({
+		width: 1100,
+		height: 484,
+		pagination: {
+			effect: 'slide',
+			active: true
+		},
+		callback: {
+			loaded: function(){
+				$('.slidesjs-navigation').hide(0);
+			}
+		},
+		play: {
+			auto: true,
+			effect: 'slide',
+			speed: 500,
+			pauseOnHover: true,
+			restartDelay: 2500
+		}
+	});
+});
+</script>
+
+<img src="../images/harry-potter/book1.svg" alt="Harry Potter book redesign">
+<img src="../images/harry-potter/book2.svg" alt="Harry Potter book redesign">
+<img src="../images/harry-potter/book3.svg" alt="Harry Potter book redesign">
+<img src="../images/harry-potter/book4.svg" alt="Harry Potter book redesign">
+
+
+<img src="../images/harry-potter/photo--flat.jpg" alt="Harry Potter book redesign">
+
+<img src="../images/harry-potter/photo--spines.jpg" alt="Harry Potter book redesign">
+
+<img src="../images/harry-potter/photo--sides.jpg" alt="Harry Potter book redesign">
+
+<img src="../images/harry-potter/photo--covers.jpg" alt="Harry Potter book redesign">
