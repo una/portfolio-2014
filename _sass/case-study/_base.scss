@@ -118,10 +118,6 @@
 		margin: 0 0 0.5em;
 		
 		@include breakpoint($page-container) {
-			margin: 0 0.3em;
-		}
-
-		@include breakpoint($layout-break) {
 			margin: 0.5em 0.3em;
 		}
 	}
