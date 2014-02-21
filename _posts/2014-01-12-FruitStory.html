@@ -9,16 +9,17 @@ roles: [Ideation, Design, Front End Development, Film, Post Production]
 color: blue
 image-index: "images/fruit-story/index.svg"
 image-bg: "../images/fruit-story/bg.jpg"
-image-top: "../images/fruit-story/hand-mock.png"
+image-top: "../images/fruit-story/top.png"
 ---
 
-<blockquote class="push center">Fruit Story augments a typical grocery experience via phone projections and story telling &mdash; getting kids subliminally excited about eating healthy!</blockquote>
+<blockquote class="push center top-summary">Fruit Story augments a typical grocery experience via phone projections and story telling &mdash; getting kids subliminally excited about eating healthy!</blockquote>
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://player.vimeo.com/video/81469787' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 <br><br><br><br>
 
 <div class="row">
 <img class="right max-60" src="../images/fruit-story/flowchart.png" alt="Fruit Story flowchart">
+<img class="right max-60" src="../images/fruit-story/sketches--animatic.jpg" alt="Fruit Story Sketch">
 <h2>A Very Conceptual Idea</h2>
 <p class="push-bottom"> The assignment for this project was to change an existing behavior for a client... and we were encouraged to use methods and things that may not exist just yet. By turning to the children, teaching them about the benefits of fruit at a young age, you can change habits when they are most pliable.
 <br><br>
@@ -36,7 +37,7 @@ I created this app as an extension of the Edible Rebranding.<br>
 <br>
 
 <img class="center" src="../images/fruit-story/sketch--story1.jpg" alt="Fruit Story Sketch">
-<img src="../images/fruit-story/sketches--animatic.jpg" alt="Fruit Story Sketch">
+
 
 <h2>Interface Design</h2>
 
@@ -55,51 +56,60 @@ I created this app as an extension of the Edible Rebranding.<br>
 </div>
 
 <img src="../images/fruit-story/icons-nocircles.svg" alt="Fruit Icons">
-<img src="../images/fruit-story/nutritionfacts.png" alt="Nutrition facts">
 
+<div class="row">
+<img class="half-l fruit-hand" src="../images/fruit-story/hand-mock2.png" alt="Fruit Story on Phone">
+<img class="half-r"src="../images/fruit-story/nutritionfacts.png" alt="Nutrition facts">
+</div>
 
-<h2>Animating the Prototype</h2>
-<p> I love design, and I love coding, and I feel like the sweet spot between design and coding is in the interactions. All of the animation on the phone prototypes was created using CSS and SVG graphics, like this example below:</p>
+<div class="right">
+<iframe src="http://unakravets.com/fruit-story/" height="470" width="320" frameborder="0"></iframe> 
+</div>
+
+<h2 class="push-top">Faking it with Code</h2>
+<p>Every phone interaction from the video was coded as a separate web page to prototype the final app (for a more natural interaction when filming). At first, I thought: great! CSS animations will make this enjoyable and easy. It will all be good. 
+<br><br>
+Well, it turns out that CSS animations run terribly on mobile devices. And I needed one of those for filming. Often the phone being used in the video would freeze, and we had to time some of the scenes pretty well. It also left my home screen filled with little icons. I designed for both the iPhone4s and iPhone5. <span>You can interact with this screen to trigger an animation timed to the music of the final video &rarr;</span>
+
+<!-- <div class="row"> -->
+<!-- <img class="left third-piece" src="../images/fruit-story/lol-phone.png" alt="Phone screen full of icons">
+
+<iframe style="margin-left:-2%" class="third-piece" src="http://unakravets.com/fruit-story/" height="470" width="320" frameborder="0"></iframe>
+
+<iframe class="third-piece" src="http://unakravets.com/fruit-story/capture5.html" height="540" width="320" frameborder="0"></iframe> -->
+<!-- </div> -->
+<br><br><br>
+<blockquote class="center push">To me, the sweet spot between design and coding is in the interactions. All of the animation on the phone prototypes was created using CSS and SVG graphics</blockquote>
+
 <p data-height="500" data-theme-id="0" data-slug-hash="nhEFp" data-user="unax3" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/unax3/pen/nhEFp'>Jeff the Bug in Flight Mode</a> by Una Kravets (<a href='http://codepen.io/unax3'>@unax3</a>) on <a href='http://codepen.io'>CodePen</a></p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-<br><br><br><br>
-<h2>Faking it with Code</h2>
-<p>Every phone interaction from the video was coded as a separate web page to prototype the final app (for a more natural interaction when filming). At first, I thought: great! CSS animations will make this enjoyable and easy. It will all be good. Well, it turns out that CSS animations run terribly on mobile devices. And I needed one of those for filming. Often the phone being used in the video would freeze, and we had to time some of the scenes pretty well. It also left my home screen filled with little icons.</p>
-
-<blockquote class="push">I designed for both the iPhone4s and iPhone5. You can interact with these screens to trigger animations timed to the music of the final video. </blockquote>
-
-
-<div class="row">
-<img class="left third-piece" src="../images/fruit-story/lol-phone.png" alt="Phone screen full of icons">
-
-<iframe style="margin-left:-2%" class="third-piece" src="http://unakravets.com/fruit-story/capture5.html" height="540" width="320" frameborder="0"></iframe>
-
-<iframe class="third-piece" src="http://unakravets.com/fruit-story/" height="470" width="320" frameborder="0"></iframe>
-</div>
-
-<br><br><br><br><br><br>
-<h2 class="center">The Gif Fix</h2>
-<p class="center">
-	To emulate a phone's camera feature &mdash; "scanning a barcode" &mdash; in Fruit Story, I filmed movies from my phone and re-created them in film. This avoided all of the trouble of 
+<br><br>
+<h2 class="center push-top">The Gif Fix</h2>
+<p class="center push-bottom">
+	To emulate <span> "scanning a barcode" </span> in Fruit Story, I filmed movies from my phone and re-created them in film (simulating a capture feature). This avoided all of the trouble of camera overlays and other inherit features in iPhone video mode.<br><br>
+	I quickly discovered that <span>iOS 6+ does not support the autoplay feature</span> of videos. Also, videos pop up in separate windows when played. Since I just wanted to fake the video as a background, I had to convert them to gifs. Yes, this increased the file size, but it was a compromise that worked.
 </p>
 
-<div class="half-l">
-<video class="rotate-r" style="margin:0 auto; text-align: center; " src="../images/fruit-story/giffix.mov" autoplay="" loop=""></video>
-<p class="caption">Original .mov file</p>
-</div>
-
-<div class="half-r">
-<img class="center" src="../images/fruit-story/giffix.gif" alt="Gif example"></img>
-<p class="caption">Converted gif</p>
+<div class="row push-top">
+	<div class="other-l">
+	<video muted style="margin:0 auto; text-align: center; " src="../images/fruit-story/giffix.mov" autoplay="" loop=""></video>
+	<p class="caption">Original .mov file</p>
+	</div>
+	<div class="other-r">
+	<img class="vid-gif" src="../images/fruit-story/giffix-r.gif" alt="Gif example"></img>
+	<p class="caption">Converted gif</p>
+	</div>
 </div>
 
 <div class="row push-top">
 	<img class="max-half right" src="../images/fruit-story/filming.jpg" alt="Filming behind the scenes">
 	<h2>Behind the Scenes</h2>
-	<h3>It Takes a City</h3>
+	<h3>It Really Takes a City.</h3>
 	<p>I wanted this app to look as realistic as possible, and the favor list I called in for this was... HUGE. Let me take a moment to thank them all. Thank you <span>Javier Rios</span> for letting me borrow your sisters mini-projector. <span>Mariesa Dale</span> and her adorable son, <span>Kayden</span>, for being a wonderful actors. <span>Alex Lubinsky</span> for doing Jeff the Bug's voice-over, and being an extra set of hands at the table set. <span>Elaina Kimes</span> for helping organize the filming in the store. <span>Whole Foods</span> for not kicking me out. And <span>Ally Palanzi</span> for being my hand model and letting me use her iPhone 5 to test screens on, and for letting me film with your DSLR. Seriously, thank you everyone.
 	</p>
 </div>
 
 <img src="../images/fruit-story/projector.jpg" alt="The projection setup">
+
+<img src="../images/fruit-story/iphone-screens.jpg" alt="Fruit Story Screens">

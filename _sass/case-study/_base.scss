@@ -73,6 +73,12 @@
 		margin-bottom: 3em;
 		display: block;
 		
+
+		&.vid-gif {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		
 		&.right,
 		&.left {
 			
@@ -316,4 +322,11 @@ p.caption {
 
 .rotate-r {
 	@include rotate(90deg);
+	display: block;
+	float: left;
+}
+
+video {
+	width: 100% !important;
+	
 }
