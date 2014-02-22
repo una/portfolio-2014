@@ -13,7 +13,7 @@
 	bottom:0;
 	}
 
-	&.about {
+	&.grey-top {
 		.toggle--1,
 		.toggle--2,
 		.toggle--3 {
@@ -109,11 +109,10 @@ nav ul{
 		}
 	}
 	
-	
 	.toggle--1,
 	.toggle--2,
 	.toggle--3 {
-		background: black;
+		background: dimgrey;
 	}
 }
 
