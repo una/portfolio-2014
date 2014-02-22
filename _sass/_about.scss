@@ -7,6 +7,11 @@
 	}
 }
 
+.about-me--wide {
+	@extend .about-me;
+	max-width: 550px;
+}
+
 .about-page {
 	background-color: white;
 	overflow: hidden;
@@ -18,17 +23,14 @@
 	z-index: 2;
 	position: absolute;
 	left: 54%;
-	top: 5em;
+	top: 16em;
 	
 	@include breakpoint(max-width 46.5em) {
 		left: 0;
+		top: 1em;
 		padding: 1em;
 		max-width: 100%;
 		position: relative;
-	}
-	
-	@include breakpoint($tab-horiz) {
-		top: 3em;
 	}
 	
 	h2 {
