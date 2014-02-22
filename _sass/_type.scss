@@ -358,12 +358,6 @@ blockquote {
 	@include breakpoint($phone-vert) {
 		@include fontsize(14);
 	}
-	
-	&:not(.push) {
-		position: relative;
-		z-index: 2;
-		margin-bottom: -1.5em;
-	}
 
 	.narrow-quote {
 		max-width: 500px;
