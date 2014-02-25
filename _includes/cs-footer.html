@@ -1,12 +1,16 @@
 	
 <div class="pagination-arrows">
 	<ul>
-		<li><a class="icon-arrow-left" href="{{page.previous.url}}" title="Previous Post: 
-		{{page.previous.title}}"></a></li>
-		<li>
-		{% if page.next.title != 'Style Guide' %}
-		<a class="icon-arrow-right" href="{{page.next.url}}" title="Next Post: 
-		{{page.next.title}}"></a></li>
+		{% if page.previous.url and page.previous.title != 'Style Guide' %}
+			<li><a class="icon-arrow-left" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"></a></li>
+		{% else %}
+			<li><a class="icon-arrow-left" href="/fruit-story" title="Last Post: Fruit Story"></a></li>
+		{% endif %}
+		
+		{% if page.next.url and page.next.title != 'Style Guide' %}
+			<li><a class="icon-arrow-right" href="{{page.next.url}}" title="Next Post: {{page.next.title}}"></a></li>
+		{% else %}
+			<li><a class="icon-arrow-right" href="/proofessor" title="First Post: Proofessor"></a></li>
 		{% endif %}
 	</ul>
 </div>
@@ -17,7 +21,7 @@
 					<a href="{{page.previous.url}}" title="Previous Post: 
 		{{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
 				{% else %}
-			<a href="/" title="Home">&laquo; Home</a>
+			<a href="/fruit-story" title="Fruit Story">&laquo; Fruit Story</a>
 				{% endif %} 
 			</div> 
 
@@ -26,7 +30,7 @@
 					<a href="{{page.next.url}}" title="next Post: 
 		{{page.next.title}}">{{page.next.title}} &raquo; </a>
 				{% else %}
-					<a href="/" title="Home">Home &raquo; </a>
+					<a href="/proofessor" title="Proofessor">Proofessor &raquo; </a>
 				{% endif %} 
 			</div>
 		</div>
