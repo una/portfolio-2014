@@ -134,3 +134,9 @@ $('.js-invert').waypoint(function() {
 // $(document).ready(function(){
 //     $('.cs-main__content').fadeIn();
 // });
+
+// Lazy Load 
+$("img.lazy").lazyload({
+    effect : "fadeIn",
+    threshold : 200
+});

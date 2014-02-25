@@ -6,7 +6,7 @@
 		{% else %}
 			<li><a class="icon-arrow-left" href="/fruit-story" title="Last Post: Fruit Story"></a></li>
 		{% endif %}
-		
+
 		{% if page.next.url and page.next.title != 'Style Guide' %}
 			<li><a class="icon-arrow-right" href="{{page.next.url}}" title="Next Post: {{page.next.title}}"></a></li>
 		{% else %}
@@ -58,5 +58,6 @@
 	<script src="../js/vendor/jquery.slides.min.js"></script>
 	<script src="../js/vendor/waypoints.min.js"></script>
 	<script src="../js/vendor/headroom.min.js"></script>
+	<script src="../js/vendor/jquery.lazyload.min.js"></script>
 	<script src="../js/scripts.js"></script>
 </html>
