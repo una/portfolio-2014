@@ -176,7 +176,11 @@ ol {
 }
 
 .slidesjs-pagination-item:first-child {
-	margin-left: 50%;
+	margin-left: 45%;
+	
+	@include breakpoint($tab-vert) {
+		margin-left:40%;
+	}
 }
 
 .slidesjs-pagination-item a {

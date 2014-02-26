@@ -106,3 +106,13 @@
 .fannotate .slidesjs-pagination-item {
 	@extend %hide-sm;
 }
+
+.fannotate {
+	.slidesjs-pagination-item:first-child {
+		margin-left: 50%;
+		
+		@include breakpoint($tab-vert) {
+			margin-left:45%;
+		}
+	}
+}
