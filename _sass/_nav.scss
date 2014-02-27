@@ -12,20 +12,12 @@
 	top:0;
 	bottom:0;
 	}
-
-	&.grey-top {
-		.toggle--1,
-		.toggle--2,
-		.toggle--3 {
-			background: $color--grey;
-		}
-	}
 }
 
 .menu-section__toggle {
 	width: 40px;
 	height: 30px;
-	position: absolute;
+	position: fixed;
 	top: 20px;
 	right: 25px;
 	cursor: pointer;
@@ -44,6 +36,10 @@
 			@include transform (rotate(-45deg) translate(8px, -10px));
 		}
 	}
+
+	@include breakpoint($phone-horiz) {
+		position: absolute;
+	}
 }
 
 .toggle--1,
@@ -51,7 +47,7 @@
 .toggle--3 {
 	width: 100%;
 	height: 5px;
-	background: white;
+	background: lighten(dimgrey, 20%);
 	margin: 6px auto;
 	backface-visibility: hidden;
 	@include transition-duration(0.3s);
