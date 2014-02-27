@@ -1,49 +1,49 @@
-$(".menu-section__toggle").on('click', function() {
+$(".menu-section__toggle").on('click', function () {
 	$(this).toggleClass("on");
 	$('.menu-section').toggleClass("on");
 	$("nav ul").toggleClass('hidden');
 });
 
 //slider
-$('.slide').each(function()
-		{
-			$('#slide-controls').append('<li></li>');
-		});
+$('.slide').each(function () {
+	$('#slide-controls').append('<li></li>');
+});
 
-$('#slide-controls li').each(function(index , item)
-		{
-			$(item).on('click' , function()
-			{
-				$('.slidesjs-pagination li a').eq(index).trigger('click');
-			})
-
-		});
+$('#slide-controls li').each(function (index, item) {
+	$(item).on('click', function ()
+	{
+		$('.slidesjs-pagination li a').eq(index).trigger('click');
+	});
+});
 
 //KEYBOARD PRESSES
-$(document).bind('keydown',function(e){
-
-	//if menu is open, bind up & down keys
+$(document).keydown(function(e) {
 	if ($(".menu-section__toggle").hasClass('on')) {
-		if (e.keyCode == 49) { 
-			location.href = $('.menu-section ul li:nth-child(1) a').attr('href');
+		switch(e.keyCode) {
+			case 49: //1
+				location.href = $('.menu-section ul li:nth-child(1) a').attr('href');
+				break;
+
+			case 50: //2
+				location.href = $('.menu-section ul li:nth-child(2) a').attr('href');
+				break;
+
+			case 51: //3
+				location.href = $('.menu-section ul li:nth-child(3) a').attr('href');
+				break;
+
+			case 52: //4
+				location.href = $('.menu-section ul li:nth-child(4) a').attr('href');
+				break;
+
+			case 53: //5
+				location.href = $('.menu-section ul li:nth-child(5) a').attr('href');
+				break;
+
+			default: return; // exit this handler for other keys
+			}
 		}
-		else if (e.keyCode == 50) { 
-			location.href = $('.menu-section ul li:nth-child(2) a').attr('href');		}
-		else if (e.keyCode == 51) { 
-			location.href = $('.menu-section ul li:nth-child(3) a').attr('href');		}
-		else if (e.keyCode == 52) { 
-			location.href = $('.menu-section ul li:nth-child(4) a').attr('href');		}
-		else if (e.keyCode == 53) { 
-			window.open($('.menu-section ul li:nth-child(5) a').attr('href'));		}
-		else if (e.keyCode == 54) { 
-			window.open($('.menu-section ul li:nth-child(6) a').attr('href'));		}
-		else if (e.keyCode == 55) { 
-			window.open($('.menu-section ul li:nth-child(7) a').attr('href'));		}
-		else if (e.keyCode == 56) { 
-			window.open($('.menu-section ul li:nth-child(8) a').attr('href'));		}
-		else if (e.keyCode == 57) { 
-			window.open($('.menu-section ul li:nth-child(9) a').attr('href'));		}
-	}
+		
 	//open menu
 	if (e.keyCode == 77) { 
 		$('.menu-section__toggle').trigger('click');
@@ -69,7 +69,7 @@ $(document).bind('keydown',function(e){
 
 	// ? to tell you commands
 	if (e.keyCode == 191) { 
-		alert('m: open menu, then press 1-9 to navigate the menu, left arrow: previous project, right arrow: next project, L: prev. slide (slider), R: next slide (slider), +: next page (turn.js), -: previous page, ?: key');
+	alert('m: open menu, then press 1-9 to navigate the menu, left arrow: previous project, right arrow: next project, L: prev. slide (slider), R: next slide (slider), +: next page (turn.js), -: previous page, ?: key');
 	}
 	
 	/* arrow keys:
@@ -116,7 +116,7 @@ $('.js-invert').waypoint(function() {
 
 // Lazy Load 
 $("img.lazy").lazyload({
-    effect : "fadeIn",
-    threshold : 200,
-    skip_invisible : false
+	effect : "fadeIn",
+	threshold : 200,
+	skip_invisible : false
 });

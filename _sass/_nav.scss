@@ -74,9 +74,12 @@ nav ul{
 		line-height: 1.5;
 		width: 100%;
 		display: block;
-			&:hover {
+			&:hover,
+			&:focus {
 				background-color: rgba(255,255,255,0.8);
 				color: $color--grey;
+				outline: none;
+				-webkit-appearance: none;
 			}
 
 		@include breakpoint($small-tab) {
