@@ -3,6 +3,11 @@
 	li {
 	width: 100%;
 	
+	@include breakpoint($tab-vert) {
+		width: 120%;
+		margin-left: -10%;
+	}
+	
 		img {
 			margin: 0 auto;
 			width: 100%;
@@ -34,7 +39,7 @@
 }
 
 .cs--list a {
-	border-bottom: none;
+	border-bottom: 1px solid lightgrey;
 }
 
 .home-about {
