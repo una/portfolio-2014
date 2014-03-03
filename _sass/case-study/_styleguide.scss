@@ -21,7 +21,11 @@ $colors: (
 	'cornflowerblue' rgb(100,149,237) 'rgb(100,149,237)',
 	gold rgb(255,215,0) 'rgb(255,215,0)',
 	hotpink rgb(255,105,180) 'rgb(255,105,180)',
-	dimgrey rgb(105,105,105) 'rgb(105,105,105)'
+	dimgrey rgb(105,105,105) 'rgb(105,105,105)',
+	dscdc-yellow rgb(255,242,0) 'cmyk(0,0,100,0)',
+	dscdc-coral rgb(240,81,48) 'cmyk(0,84,90,0)',
+	dscdc-teal rgb(61,193,203) 'cmyk(65,0,22,0)',
+	dscdc-navy rgb(12,66,105) 'cmyk(100,77,35,21)'
 );
 
 @each $color in $colors {

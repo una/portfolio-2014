@@ -112,13 +112,6 @@
 			}
 		}
 	}
-
-	ul,
-	ol {
-		@include breakpoint($page-container) {
-			margin-left: 2rem;
-		}
-	}
 	
 	h2 {
 		margin: 0 0 0.5em;
