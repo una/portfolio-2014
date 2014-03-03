@@ -20,39 +20,56 @@
 }
 
 .drunk-movement {
-	width: 300px;
-	height: 200px;
+	width: 400px;
+	height: 300px;
 	background-color: hotpink;
 	display: block;
 }
 
 @include keyframes(drunk-1) {
   0% {      
-			transform: rotate3d(0,1,10,5deg);
-			-moz-transform: rotate3d(0,1,10,5deg);
-			-ms-transform: rotate3d(0,1,10,5deg);
-			-o-transform: rotate3d(0,1,10,5deg);
-			-webkit-transform: rotate3d(0,1,10,5deg);
-			    opacity: 1;
+	@include transform (rotate3d(0,1,10,5deg));
+	opacity: 1;
   }
-  60% {     transform: rotate3d(0,1,-50,10deg);
-			-moz-transform: rotate3d(0,1,-50,10deg);
-			-ms-transform: rotate3d(0,1,-50,10deg);
-			-o-transform: rotate3d(0,1,-50,10deg);
-			-webkit-transform: rotate3d(0,1,-50,10deg);
-      		opacity: 0.5;
+  60% {     
+  	@include transform (rotate3d(0,1,-50,10deg));
+    opacity: 0.5;
   }
-  100% {    transform: rotate3d(0,1,0,-10deg);
-			-moz-transform: rotate3d(0,1,0,-10deg);
-			-ms-transform: rotate3d(0,1,0,-10deg);
-			-o-transform: rotate3d(0,1,0,-10deg);
-			-webkit-transform: rotate3d(0,1,0,-10deg);
-      opacity: 1;
-		  }
-		}
+  100% {    
+  	@include transform (rotate3d(0,1,0,-10deg));
+    opacity: 1;
+  }
+}
 
-.drunk1 {
+.drunk-1 {
 	@include animation(drunk-1 6s infinite);
+	
 	animation-direction:alternate;
 	-webkit-animation-direction:alternate; 
+}
+
+.sheep {
+	margin-left:100%;	
+	@include animation(sheep 10s infinite linear);
+}
+
+@include keyframes(sheep) {
+  0% {      
+	margin-left:100%;
+	@include transform(rotate(0deg))
+  }
+  49% {
+  	@include transform(rotate(0deg))
+  }
+ 50% {     
+  	margin-left: -60px;
+  	@include transform(rotate(180deg))
+  }
+  99% {
+  	@include transform(rotate(180deg))
+  }
+  100% {    
+  	margin-left:100%;
+  	@include transform(rotate(0deg))
+  }
 }
