@@ -11,14 +11,82 @@ image-top: "../images/blackout-bunny/top.svg"
 image-index: "images/blackout-bunny/index.svg"
 image-bg: "../images/blackout-bunny/bg.jpg"
 ---
+<script src="../js/vendor/highlight.pack.js"></script>
+<script>
+	$(document).ready(function() {
+		$('pre code').each(function(i, e) {hljs.highlightBlock(e)});
+	});
+</script>
+<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/zenburn.min.css">
 
 <img class="lazy" src="../images/loading.gif" data-original="../images/blackout-bunny/all-chars.png" alt="Blackout Bunny">
 
 <img class="lazy" src="../images/loading.gif" data-original="../images/blackout-bunny/logo-black.png" alt="Blackout Bunny">
 
-<img class="lazy" src="../images/loading.gif" data-original="../images/blackout-bunny/sprites.png" alt="Blackout Bunny">
 
+<div class="drunk-movement drunk-1">
+	
+</div>
+<pre>
+	<code>
+@include keyframes(drunk-1) {
+  0% {      
+	transform: rotate3d(0,1,10,5deg);
+	-moz-transform: rotate3d(0,1,10,5deg);
+	-ms-transform: rotate3d(0,1,10,5deg);
+	-o-transform: rotate3d(0,1,10,5deg);
+	-webkit-transform: rotate3d(0,1,10,5deg);
+	    opacity: 1;
+  }
+  60% {     
+  	transform: rotate3d(0,1,-50,10deg);
+	-moz-transform: rotate3d(0,1,-50,10deg);
+	-ms-transform: rotate3d(0,1,-50,10deg);
+	-o-transform: rotate3d(0,1,-50,10deg);
+	-webkit-transform: rotate3d(0,1,-50,10deg);
+		opacity: 0.5;
+  }
+  100% {    
+  	transform: rotate3d(0,1,0,-10deg);
+	-moz-transform: rotate3d(0,1,0,-10deg);
+	-ms-transform: rotate3d(0,1,0,-10deg);
+	-o-transform: rotate3d(0,1,0,-10deg);
+	-webkit-transform: rotate3d(0,1,0,-10deg);
+      opacity: 1;
+  }
+}
+
+.drunk1 {
+	-webkit-animation: drunk-1 6s infinite;
+	-moz-animation:    drunk-1 6s infinite;
+	-o-animation:      drunk-1 6s infinite;
+	animation:         drunk-1 6s infinite;
+	
+	animation-direction:alternate;
+	-webkit-animation-direction:alternate; 
+}
+	</code>
+</pre>
+<img class="sheep" src="../images/blackout-bunny/sheep.gif" alt="Blackout Bunny">
+
+
+<div class="row">
+<h2>Mini Games</h2>
+<img class="lazy right" src="../images/loading.gif" data-original="../images/blackout-bunny/mini3.png" alt="Blackout Bunny">
+<img class="lazy right" src="../images/loading.gif" data-original="../images/blackout-bunny/holding_photo.png" alt="Blackout Bunny">
+</div>
+
+<div class="row">
+<img class="lazy left max-half" src="../images/loading.gif" data-original="../images/blackout-bunny/sprites.png" alt="Blackout Bunny">
+<h2>World Map</h2>
+</div>
+<div class="row">
 <div class="magnify">
 	<div class="large"></div>
-	<img class="small lazy" src="../images/loading.gif" data-original="../images/blackout-bunny/level-full.png" width="150%"/>
+	<img class="small lazy" src="../images/loading.gif" data-original="../images/blackout-bunny/level-full.png" width="100%"/>
 </div>
+</div>
+
+
+
+<img class="lazy center" src="../images/loading.gif" data-original="../images/blackout-bunny/flowers.png" alt="Blackout Bunny">
