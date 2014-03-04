@@ -4,12 +4,7 @@ window.PORT || (PORT = {});
 
   var _common = PORT.common = {
     init: function () {
-      this.setVars();
       this.bindEvents();
-    },
-
-    setVars: function () {
-
     },
 
     bindEvents: function () {
@@ -21,7 +16,7 @@ window.PORT || (PORT = {});
 
     detectChrome: function () {
       //detect Chrome to fix ampersand bug bc Firefox doesn't support unicode-range
-      if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
+      if ( /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()) ) {
         $('html').addClass('chrome');
       }
     },
@@ -88,7 +83,8 @@ window.PORT || (PORT = {});
             alert('m: open menu, then press 1-9 to navigate the menu, left arrow: previous project, right arrow: next project, -: prev. slide (slider), +: next slide (slider)');
             break;
           
-          default: return; 
+          default:
+            return;
         }
       }
     },
