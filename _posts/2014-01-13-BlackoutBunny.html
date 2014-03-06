@@ -10,6 +10,7 @@ summary: An Online Game
 image-top: "../images/blackout-bunny/top.svg"
 image-index: "images/blackout-bunny/index.svg"
 image-bg: "../images/blackout-bunny/bg.jpg"
+published: false
 ---
 <script src="../js/vendor/highlight.pack.js"></script>
 <script>
@@ -32,7 +33,7 @@ image-bg: "../images/blackout-bunny/bg.jpg"
 <pre>
 	<code>
 @include keyframes(drunk-1) {
-	0% {      
+	0% {
   		@include transform (rotate3d(0,1,10,5deg));
   		opacity: 1;
 	}
@@ -44,7 +45,7 @@ image-bg: "../images/blackout-bunny/bg.jpg"
 	}
 
 
-	100% {    
+	100% {
  		@include transform (rotate3d(0,1,0,-10deg));
   		opacity: 1;
 	}
@@ -52,9 +53,9 @@ image-bg: "../images/blackout-bunny/bg.jpg"
 
 .drunk-1 {
 	@include animation(drunk-1 6s infinite);
-	
+
 	animation-direction:alternate;
-	-webkit-animation-direction:alternate; 
+	-webkit-animation-direction:alternate;
 }
 	</code>
 </pre>
