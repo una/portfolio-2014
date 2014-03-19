@@ -36,7 +36,7 @@ body {
 .left {
 	float: left;
 	padding-right: 2em;
-	
+
 	@include breakpoint($small-tab) {
 		padding-right: 0;
 	}
@@ -46,7 +46,7 @@ body {
 .right {
 	float: right;
 	padding-left: 2em;
-	
+
 	@include breakpoint($small-tab) {
 		padding-left: 0;
 	}
@@ -136,7 +136,7 @@ p {
 		left: 0;
 		position: absolute;
 		width: 100%;
-		}  
+		}
 
 		&:after {
 		border-left: solid transparent 10px;
@@ -152,7 +152,7 @@ p {
 		}
 	}
 }
-  
+
 .has-tooltip:hover .tooltip {
     opacity: 1;
     visibility: visible;
