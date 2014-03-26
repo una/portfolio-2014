@@ -57,7 +57,7 @@ window.PORT || (PORT = {});
           default: return; // exit this handler for other keys
           }
         }
-        
+
       else {
         switch(e.keyCode) {
           case 37: // left arr
@@ -65,7 +65,7 @@ window.PORT || (PORT = {});
             location.href = $('.pagination .left a').attr('href');
           }
           break;
-          
+
           case 39: // left arr
           if ($('.cs-main').length) {
             location.href = $('.pagination .right a').attr('href');
@@ -87,8 +87,8 @@ window.PORT || (PORT = {});
           case 191: //?
             alert('m: open menu, then press 1-9 to navigate the menu, left arrow: previous project, right arrow: next project, -: prev. slide (slider), +: next slide (slider)');
             break;
-          
-          default: return; 
+
+          default: return;
         }
       }
     },
@@ -102,7 +102,7 @@ window.PORT || (PORT = {});
 
           var image_object = new Image();
           image_object.src = $(".small").attr("src");
-          
+
           native_width = image_object.width;
           native_height = image_object.height;
         }
@@ -110,7 +110,7 @@ window.PORT || (PORT = {});
         {
           var magnify_offset = $(this).offset();
           var mx = e.pageX - magnify_offset.left;
-          var my = e.pageY - magnify_offset.top;    
+          var my = e.pageY - magnify_offset.top;
           if(mx < $(this).width() && my < $(this).height() && mx > 0 && my > 0)
           {$(".large").fadeIn(100);}
           else
