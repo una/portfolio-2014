@@ -88,6 +88,22 @@ window.PORT || (PORT = {});
             alert('m: open menu, then press 1-9 to navigate the menu, left arrow: previous project, right arrow: next project, -: prev. slide (slider), +: next slide (slider)');
             break;
 
+          case 81: // Q
+            location.href = "/edible";
+          break;
+
+          case 87: // W
+            location.href = "/fruit-story";
+          break;
+
+          case 69: // E
+            location.href = "/proofessor";
+          break;
+
+          case 82: // R
+            location.href = "/united-app";
+          break;
+
           default: return;
         }
       }

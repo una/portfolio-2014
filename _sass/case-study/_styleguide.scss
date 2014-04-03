@@ -25,8 +25,27 @@ $colors: (
 	dscdc-yellow rgb(255,242,0) 'cmyk(0,0,100,0)',
 	dscdc-coral rgb(240,81,48) 'cmyk(0,84,90,0)',
 	dscdc-teal rgb(61,193,203) 'cmyk(65,0,22,0)',
-	dscdc-navy rgb(12,66,105) 'cmyk(100,77,35,21)'
+	dscdc-navy rgb(12,66,105) 'cmyk(100,77,35,21)',
+	united-primary #003399 '#003399',
+	united-secondary #4FA6C9 '#4fa6c9',
+	united-tertiary #333 '#333333',
+	united-grey #ddd '#dddddd',
+	united-alert-red #a31d1d '#a31d1d',
+	united-alert-orange #ff6e51 '#ff6e51',
+	united-alert-yellow #f29e18 '#f29e18',
+	united-alert-green #58a942 '#58a942'
+	
 );
+
+//$color-primary: #003399;
+// $color-secondary: #4FA6C9;
+// $color-tertiary: adjust_hue(saturate(lighten($color-secondary, 5), 10), 356);
+
+
+// $color-alert-orange: #ff6e51;
+// $color-alert-red: #80cedd;
+// $color-alert-yellow: #f29e18;
+// $color-alert-green: #58a942;
 
 @each $color in $colors {
 	$var-namr: nth($color, 1);
