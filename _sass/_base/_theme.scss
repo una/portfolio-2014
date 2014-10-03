@@ -18,6 +18,11 @@
 	@include color-specific(cornflowerblue);
 }
 
+%hotpink,
+.hotpink {
+	@include color-specific(hotpink);
+}
+
 %white,
 .white {
 	color: white;
