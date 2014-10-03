@@ -64,3 +64,8 @@ blockquote.right {
 	margin-right: auto;
 	text-align: center;
 }
+
+%clearfix,
+.clearfix {
+	clear: both;
+}

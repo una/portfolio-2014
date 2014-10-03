@@ -17,3 +17,8 @@
 .blue {
 	@include color-specific(cornflowerblue);
 }
+
+%white,
+.white {
+	color: white;
+}

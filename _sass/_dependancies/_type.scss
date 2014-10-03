@@ -164,7 +164,7 @@
 	content: "\e628";
 }
 
-
+//Specifying Font Families
 %font-copy {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300; 
@@ -190,6 +190,8 @@
 	font-weight: 400; 
 }
 
+
+//Font style helpers
 .uppercase,
 %uppercase {
 	text-transform: uppercase;
@@ -200,15 +202,9 @@
 	text-transform: lowercase;
 }
 
-
-%white,
-.white {
-	color: white;
-}
-
-%clearfix,
-.clearfix {
-	clear: both;
+.italic,
+%italic {
+	font-style: italic;
 }
 
 h1,
@@ -302,29 +298,6 @@ p {
 	font-weight: 800;
 }
 
-h1,
-h2 {
-	@extend %font-title;
-}
-
-h1 {
-	@include fontsize(48);
-	
-	@include breakpoint($tab-horiz) {
-		@include fontsize(42);
-	}
-	@include breakpoint($small-tab) {
-		@include fontsize(36);
-	}
-	@include breakpoint($phone-horiz) {
-		@include fontsize(28);
-	}
-	@include breakpoint($phone-vert) {
-		@include fontsize(20);
-	}
-
-}
-
 blockquote {
 	@extend %font-blockquote;
 	@extend %clearfix;
@@ -351,15 +324,30 @@ blockquote {
 	}
 }
 
-a {
-	@extend %font-blockquote;
-	@include transition-duration(0.5s);
-	//text-decoration: none;
-	padding: 0 0.2em;
+//Breakpoints for fonts
+h1 {
+	@include fontsize(48);
+	@extend %font-title;
+	
+	@include breakpoint($tab-horiz) {
+		@include fontsize(42);
+	}
+	@include breakpoint($small-tab) {
+		@include fontsize(36);
+	}
+	@include breakpoint($phone-horiz) {
+		@include fontsize(28);
+	}
+	@include breakpoint($phone-vert) {
+		@include fontsize(20);
+	}
+
 }
 
 h2 {
 	@include fontsize(42);
+	@extend %font-title;
+
 	@include breakpoint($tab-horiz) {
 		@include fontsize(36);
 	}
@@ -368,17 +356,6 @@ h2 {
 	}
 	@include breakpoint($phone-horiz) {
 		@include fontsize(24);
-	}
-}
-
-p {
-	color: $color--copy;
-	line-height: 1.6;
-	
-	&.center {
-		max-width: 600px;
-		-ms-text-align: left;
-		text-align: left;
 	}
 }
 
@@ -412,13 +389,25 @@ h3 {
 	}
 }
 
+p {
+	color: $color--copy;
+	line-height: 1.6;
+	
+	&.center {
+		max-width: 600px;
+		-ms-text-align: left;
+		text-align: left;
+	}
+}
+
+a {
+	@extend %font-blockquote;
+	@include transition-duration(0.5s);
+	padding: 0 0.2em;
+}
+
 small {
 	font-size: 70%;
 	color: $color--copy;
 	@extend %font-copy; 
-}
-
-.italic,
-%italic {
-	font-style: italic;
 }
