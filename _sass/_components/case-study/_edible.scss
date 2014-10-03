@@ -1,6 +1,8 @@
 .edible {
 
-	.magnify {width: 100%; margin: 0 auto; position: relative;}
+	.magnify { 
+		width: 100%; margin: 0 auto; position: relative;
+	}
 
 	.large {
 		width: 250px; height: 250px;
@@ -15,6 +17,8 @@
 		display: none;
 	}
 
-	.small { display: block; }
+	.small { 
+		display: block;
+	}
 
 }

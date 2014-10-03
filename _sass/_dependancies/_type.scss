@@ -164,7 +164,7 @@
 	content: "\e628";
 }
 
-
+//Specifying Font Families
 %font-copy {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300; 
@@ -190,6 +190,8 @@
 	font-weight: 400; 
 }
 
+
+//Font style helpers
 .uppercase,
 %uppercase {
 	text-transform: uppercase;
@@ -200,15 +202,21 @@
 	text-transform: lowercase;
 }
 
-
-%white,
-.white {
-	color: white;
+.italic,
+%italic {
+	font-style: italic;
 }
 
-%clearfix,
-.clearfix {
-	clear: both;
+h1,
+h2,
+h3,
+h4,
+blockquote,
+p {
+	@include breakpoint($page-container) {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 }
 
 @mixin color-specific($var-name) {
@@ -279,31 +287,6 @@
 	}
 }
 
-%orange,
-.orange {
-	@include color-specific(tomato);
-}
-
-%orange,
-.orange {
-	@include color-specific(tomato);
-}
-
-%gold,
-.gold {
-	@include color-specific(gold);
-}
-
-%blue,
-.blue {
-	@include color-specific(cornflowerblue);
-}
-
-body {
-	@extend %font-copy;
-	font-size: 16px;
-}
-
 //bc Firefox doesn't support unicode-range
 .chrome h1,
 .chrome h2,
@@ -313,29 +296,6 @@ body {
 
 .chrome h3 {
 	font-weight: 800;
-}
-
-h1,
-h2 {
-	@extend %font-title;
-}
-
-h1 {
-	@include fontsize(48);
-	
-	@include breakpoint($tab-horiz) {
-		@include fontsize(42);
-	}
-	@include breakpoint($small-tab) {
-		@include fontsize(36);
-	}
-	@include breakpoint($phone-horiz) {
-		@include fontsize(28);
-	}
-	@include breakpoint($phone-vert) {
-		@include fontsize(20);
-	}
-
 }
 
 blockquote {
@@ -364,20 +324,30 @@ blockquote {
 	}
 }
 
-%center-contain,
-.center-contain {
-	text-align: center;
-}
+//Breakpoints for fonts
+h1 {
+	@include fontsize(48);
+	@extend %font-title;
+	
+	@include breakpoint($tab-horiz) {
+		@include fontsize(42);
+	}
+	@include breakpoint($small-tab) {
+		@include fontsize(36);
+	}
+	@include breakpoint($phone-horiz) {
+		@include fontsize(28);
+	}
+	@include breakpoint($phone-vert) {
+		@include fontsize(20);
+	}
 
-a {
-	@extend %font-blockquote;
-	@include transition-duration(0.5s);
-	//text-decoration: none;
-	padding: 0 0.2em;
 }
 
 h2 {
 	@include fontsize(42);
+	@extend %font-title;
+
 	@include breakpoint($tab-horiz) {
 		@include fontsize(36);
 	}
@@ -386,17 +356,6 @@ h2 {
 	}
 	@include breakpoint($phone-horiz) {
 		@include fontsize(24);
-	}
-}
-
-p {
-	color: $color--copy;
-	line-height: 1.6;
-	
-	&.center {
-		max-width: 600px;
-		-ms-text-align: left;
-		text-align: left;
 	}
 }
 
@@ -430,13 +389,25 @@ h3 {
 	}
 }
 
-small {
-	font-size: 70%;
+p {
 	color: $color--copy;
-	@extend %font-copy; 
+	line-height: 1.6;
+	
+	&.center {
+		max-width: 600px;
+		-ms-text-align: left;
+		text-align: left;
+	}
 }
 
-.italic,
-%italic {
-	font-style: italic;
+a {
+	@extend %font-blockquote;
+	@include transition-duration(0.5s);
+	padding: 0 0.2em;
+}
+
+small {
+	@extend %font-copy; 
+	font-size: 70%;
+	color: $color--copy;
 }
