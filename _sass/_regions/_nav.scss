@@ -45,12 +45,12 @@
 .toggle--1,
 .toggle--2,
 .toggle--3 {
+	@include transition-duration(0.3s);
 	width: 100%;
 	height: 5px;
 	background: lighten($color--dimgrey, 20%);
 	margin: 6px auto;
 	backface-visibility: hidden;
-	@include transition-duration(0.3s);
 }
 
 nav ul{
@@ -67,9 +67,9 @@ nav ul{
 		
 		a {
 		@include transition-duration(0.5s);
+		@include fontsize(40);
 		text-decoration: none;
 		color: white;
-		@include fontsize(40);
 		font-weight: 800;
 		line-height: 1.5;
 		width: 100%;

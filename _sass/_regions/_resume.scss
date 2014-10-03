@@ -1,14 +1,14 @@
 .resume {
+	@include fontsize(10);
 	display: block;
 	overflow: hidden;
 	color: lightgrey;
 	line-height: 1.6;
 	margin-bottom: 4em;
-	@include fontsize(10);
 	
 	h1 {
-		margin-top: 0.5em;
 		@include fontsize(60);
+		margin-top: 0.5em;
 		
 		@include breakpoint($tab-vert) {
 			@include fontsize(40);
@@ -37,8 +37,8 @@
 	}
 
 	.subtitle {
-		font-weight: 400;
 		@include fontsize(16);
+		font-weight: 400;
 		margin-top: -1em;
 		color: white;
 		
@@ -80,11 +80,10 @@
 	}
 
 	h3 {
+		@include fontsize(16);
 		color: white;
 		line-height: 1.2;
-		@include fontsize(16);
 		font-weight: 400;
-		//margin-left: -5%;
 		margin: 1.5em 0 0.5em;
 
 

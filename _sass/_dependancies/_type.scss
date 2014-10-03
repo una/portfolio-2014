@@ -407,7 +407,7 @@ a {
 }
 
 small {
+	@extend %font-copy; 
 	font-size: 70%;
 	color: $color--copy;
-	@extend %font-copy; 
 }
