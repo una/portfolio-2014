@@ -2,23 +2,26 @@
 @import "compass/css3";
 @import "breakpoint";
 
-@import "vars";
-@import "mixins";
-@import "type";
-@import "base";
-@import "nav";
-@import "pagination";
-@import "home";
-@import "about";
-@import "footer";
-@import "resume";
+@import "dependancies/vars";
+@import "dependancies/type";
 
-@import "case-study/base";
-@import "case-study/styleguide";
-@import "case-study/fannotate";
-@import "case-study/harrypotter";
-@import "case-study/sltm";
-@import "case-study/proof";
-@import "case-study/edible";
-@import "case-study/fruitstory";
-@import "case-study/blackout-bunny";
+@import "base/mixins";
+@import "base/base";
+
+@import "regions/nav";
+@import "regions/home";
+@import "regions/about";
+@import "regions/footer";
+@import "regions/resume";
+
+@import "components/pagination";
+
+@import "components/case-study/base";
+@import "components/case-study/styleguide";
+@import "components/case-study/fannotate";
+@import "components/case-study/harrypotter";
+@import "components/case-study/sltm";
+@import "components/case-study/proof";
+@import "components/case-study/edible";
+@import "components/case-study/fruitstory";
+@import "components/case-study/blackout-bunny";
