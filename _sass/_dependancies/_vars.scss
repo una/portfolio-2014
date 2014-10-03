@@ -1,5 +1,4 @@
 // COLORS!!
-
 $color--orange: tomato; // #ff6347 rgb(255,99,71)
 $color--blue: cornflowerblue; // #6495ed rgb(100,149,237)
 $color--gold: gold; // #ffd700 rgb(255,215,0)
@@ -11,7 +10,6 @@ $color--copy: $color--grey;
 $color--copy--dark: darken($color--grey, 15);
 
 // BREAKPOINTS
-
 $phone-vert: max-width 20em; // 20em (320px)
 $phone-horiz: max-width 30em; // 30em (480px)
 $small-tab: max-width 37.5em; // 37.5em (600px)

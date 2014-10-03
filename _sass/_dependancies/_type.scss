@@ -211,6 +211,18 @@
 	clear: both;
 }
 
+h1,
+h2,
+h3,
+h4,
+blockquote,
+p {
+	@include breakpoint($page-container) {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
+
 @mixin color-specific($var-name) {
 	color: $var-name;
 
@@ -279,31 +291,6 @@
 	}
 }
 
-%orange,
-.orange {
-	@include color-specific(tomato);
-}
-
-%orange,
-.orange {
-	@include color-specific(tomato);
-}
-
-%gold,
-.gold {
-	@include color-specific(gold);
-}
-
-%blue,
-.blue {
-	@include color-specific(cornflowerblue);
-}
-
-body {
-	@extend %font-copy;
-	font-size: 16px;
-}
-
 //bc Firefox doesn't support unicode-range
 .chrome h1,
 .chrome h2,
@@ -362,11 +349,6 @@ blockquote {
 	.narrow-quote {
 		max-width: 500px;
 	}
-}
-
-%center-contain,
-.center-contain {
-	text-align: center;
 }
 
 a {
