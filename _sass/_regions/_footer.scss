@@ -20,9 +20,9 @@ footer {
 		}
 
 		a {
-			color: hotpink;
+			color: $color--hotpink;
 			&:hover {
-				background: hotpink;
+				background: $color--hotpink;
 				color: white;
 			}
 		}

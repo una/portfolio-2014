@@ -46,20 +46,20 @@
 	}
 
 	a {
-		color: hotpink;
+		color: $color--hotpink;
 		&:hover {
-			background: hotpink;
+			background: $color--hotpink;
 			color: white;
 		}
 
 		&.pull-link {
-			background: hotpink;
+			background: $color--hotpink;
 			color: white;
 			@include fontsize(12);
 			
 			&:hover {
 				background: white;
-				color: hotpink;
+				color: $color--hotpink;
 			}
 		}
 	}

@@ -25,7 +25,7 @@
 	h2:not(.subtitle) {
 		@include fontsize(22);
 		color: white;
-		background: hotpink;
+		background: $color--hotpink;
 		padding: 0 0.5em;
 		margin: 1.5em 0 0.5em;
 		font-weight: 800;
@@ -45,7 +45,7 @@
 		span {
 			margin-right: 0.5em;
 			font-size: 90%; 
-			color: hotpink;
+			color: $color--hotpink;
 			margin-left: 2em;
 		}
 
@@ -65,16 +65,16 @@
 		display: inline; 
 		
 		@include breakpoint($phone-horiz) {
-			border-bottom: 1px solid hotpink;
+			border-bottom: 1px solid $color--hotpink;
 			display: block;
 			@include fontsize(14);
 		}
 	}
 
 	a {
-		color: hotpink;
+		color: $color--hotpink;
 		&:hover {
-			background: hotpink;
+			background: $color--hotpink;
 			color: white;
 		}
 	}

@@ -34,18 +34,7 @@ $colors: (
 	united-alert-orange #ff6e51 '#ff6e51',
 	united-alert-yellow #f29e18 '#f29e18',
 	united-alert-green #58a942 '#58a942'
-	
 );
-
-//$color-primary: #003399;
-// $color-secondary: #4FA6C9;
-// $color-tertiary: adjust_hue(saturate(lighten($color-secondary, 5), 10), 356);
-
-
-// $color-alert-orange: #ff6e51;
-// $color-alert-red: #80cedd;
-// $color-alert-yellow: #f29e18;
-// $color-alert-green: #58a942;
 
 @each $color in $colors {
 	$var-namr: nth($color, 1);

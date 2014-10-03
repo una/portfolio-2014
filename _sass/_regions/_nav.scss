@@ -47,7 +47,7 @@
 .toggle--3 {
 	width: 100%;
 	height: 5px;
-	background: lighten(dimgrey, 20%);
+	background: lighten($color--dimgrey, 20%);
 	margin: 6px auto;
 	backface-visibility: hidden;
 	@include transition-duration(0.3s);
@@ -111,7 +111,7 @@ nav ul{
 	.toggle--1,
 	.toggle--2,
 	.toggle--3 {
-		background: dimgrey;
+		background: $color--dimgrey;
 	}
 }
 
