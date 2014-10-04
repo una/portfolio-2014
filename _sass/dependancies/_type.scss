@@ -82,7 +82,11 @@ $icons: (
 	arrow-right: "\e628",
 );
 
-
+@each $name, $visual in $icons {
+    .icon-#{$name}:before {
+        content: $visual;
+    }
+}
 
 //Specifying Font Families
 %font-copy {
