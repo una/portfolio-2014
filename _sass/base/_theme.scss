@@ -1,26 +1,21 @@
 %orange,
 .orange {
-	@include color-specific(tomato);
-}
-
-%orange,
-.orange {
-	@include color-specific(tomato);
+	@include color-specific($color--orange);
 }
 
 %gold,
 .gold {
-	@include color-specific(gold);
+	@include color-specific($color-gold);
 }
 
 %blue,
 .blue {
-	@include color-specific(cornflowerblue);
+	@include color-specific($color--blue);
 }
 
 %hotpink,
 .hotpink {
-	@include color-specific(hotpink);
+	@include color-specific($color--hotpink);
 }
 
 %white,
