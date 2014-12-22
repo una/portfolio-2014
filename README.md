@@ -18,4 +18,10 @@ This website is completely navigable by arrow keys. Press "?" if you forget what
 		+	when inside of menu, use 1-9 to navigate the links
 	+	< & > = navigation between case studies
 	+	L & R = flipping pages of online print pieces
-	+	- & + = left and right navigation on sliders 
+	+	- & + = left and right navigation on sliders
+
+
+```
+bundle install
+jekyll serve --watch
+```
