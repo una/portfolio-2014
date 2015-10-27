@@ -23,7 +23,8 @@
 		background: rgba(105,105,105,0.3);
 		color: white;
 		text-decoration: none;
-		
+		z-index: 14;
+
 		@include breakpoint($phone-horiz) {
 			@include fontsize(12);
 		}
